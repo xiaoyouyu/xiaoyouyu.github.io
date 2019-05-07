@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vuex 简介 | 小鱿鱼</title>
+    <meta name="description" content="技术笔记">
+    <link rel="shortcut icon" href="/favicon-32x32.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#3eaf7c">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="apple-touch-startup-image" media="(device-width: 320px)" href="/icons/hbb/apple-launch-640x1136.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 375px)" href="/icons/hbb/apple-launch-750x1334.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 414px)" href="/icons/hbb/apple-launch-1242x2208.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 768px)" href="/icons/hbb/apple-launch-1536x2048.png">
+  <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+  <meta name="msapplication-TileImage" content="/icons/icon-192x192.png">
+  <meta name="msapplication-TileColor" content="#3eaf7c">
+  <link rel="mask-icon" href="/icons/touch-bar.svg" color="#3eaf7c">
+  <meta name="google-site-verification" content="Z8IG4v348qcydMP25GCgfRU2RIbUXbG9SK2bM2j8aCs">
+  <script src="//hm.baidu.com/hm.js?536020c63661169243a356501dcb5d98"></script>
+    
+    <link rel="preload" href="/assets/css/0.styles.f019790a.css" as="style"><link rel="preload" href="/assets/js/app.200f72b3.js" as="script"><link rel="preload" href="/assets/js/3.c98e1996.js" as="script"><link rel="preload" href="/assets/js/2.67adf6fa.js" as="script"><link rel="preload" href="/assets/js/14.9e592b66.js" as="script"><link rel="preload" href="/assets/js/5.d8048fa3.js" as="script"><link rel="prefetch" href="/assets/js/10.695b729a.js"><link rel="prefetch" href="/assets/js/11.b97cd90c.js"><link rel="prefetch" href="/assets/js/12.5eadcb44.js"><link rel="prefetch" href="/assets/js/13.999e8bbf.js"><link rel="prefetch" href="/assets/js/15.7a157c78.js"><link rel="prefetch" href="/assets/js/16.501cc97a.js"><link rel="prefetch" href="/assets/js/4.32511c13.js"><link rel="prefetch" href="/assets/js/6.e13555a6.js"><link rel="prefetch" href="/assets/js/7.99d30589.js"><link rel="prefetch" href="/assets/js/8.69743046.js"><link rel="prefetch" href="/assets/js/9.8119a5b7.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.f019790a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">小鱿鱼</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><a href="/docs/guide/" class="nav-link">指南</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">技术栈</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/vue/" class="nav-link router-link-active">Vue v2.x</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/markdown/" class="nav-link">Markdown</a></li></ul></div></div> <a href="https://github.com/xiaoyouyu/-" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><a href="/docs/guide/" class="nav-link">指南</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">技术栈</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/vue/" class="nav-link router-link-active">Vue v2.x</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/markdown/" class="nav-link">Markdown</a></li></ul></div></div> <a href="https://github.com/xiaoyouyu/-" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><a href="/docs/vue/" class="sidebar-link">Vue v2.x</a></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span></span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/vue/vuex/" class="active sidebar-link">Vuex 简介</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li><li><a href="/docs/vue/vue项目调试.html" class="sidebar-link">vue项目调试</a></li></ul> </aside> <main class="page"> <div class="content default"><h3 id="什么是vuex"><a href="#什么是vuex" aria-hidden="true" class="header-anchor">#</a> <a href="https://vuex.vuejs.org/zh/" target="_blank" rel="noopener noreferrer">什么是Vuex<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></h3> <p>vuex相当于一个全局的配置对象（以单例模式存在），当把这个对象全局注入（Vue.use(Vuex)）后，就跟window对象类似，在任何一个vue文件中都可以使用它，可以通过state设置一些开关和配置，通过mutations设置一些处理state函数。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Vuex<span class="token punctuation">.</span>Store</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    state<span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token comment">//状态，表示属性数据</span>
+        count<span class="token punctuation">:</span> <span class="token number">0</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    mutations<span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token comment">//转换，表示处理属性的函数</span>
+        <span class="token function">increment</span><span class="token punctuation">(</span><span class="token parameter">state</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            state<span class="token punctuation">.</span>count<span class="token operator">++</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>组件中，可以通过this.$store.state获取属性，dom模板中使用，要省去this
+Vuex 通过 store 选项，提供了一种机制将状态从根组件“注入”到每一个子组件中（需调用 Vue.use(Vuex)）：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">import</span> Vuex <span class="token keyword">from</span> <span class="token string">'vuex'</span>
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>Vuex<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> store <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Vuex<span class="token punctuation">.</span>Store</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token comment">//可以将这块单独一个文件进行配置，然后用import导入进来</span>
+<span class="token keyword">var</span> mapState <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Vuex<span class="token punctuation">.</span>mapState</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token comment">//辅助函数，用来为当前组件提供额外的计算属性</span>
+
+<span class="token comment">//或者</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span>
+    Store<span class="token punctuation">,</span>
+    mapState<span class="token punctuation">,</span>
+    install
+<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span>
+<span class="token keyword">var</span> xvxx <span class="token operator">=</span> <span class="token punctuation">{</span>
+    Store<span class="token punctuation">,</span>
+    mapState<span class="token punctuation">,</span>
+    install
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>xvxx<span class="token punctuation">)</span>
+<span class="token keyword">var</span> store <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Store</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">var</span> mapState <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">mapState</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token comment">//辅助函数，用来为当前组件提供额外的计算属性</span>
+
+<span class="token comment">//将store注入到每一个子组件中</span>
+<span class="token keyword">const</span> app <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    el<span class="token punctuation">:</span> <span class="token string">'#app'</span><span class="token punctuation">,</span>
+    store<span class="token punctuation">,</span> <span class="token comment">// 把 store 对象提供给 “store” 选项，这可以把 store 的实例注入所有的子组件的vue实例上面</span>
+    components<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        Counter
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    template<span class="token punctuation">:</span> <span class="token template-string"><span class="token string">`
+	    &lt;div class=&quot;app&quot;&gt;
+	      &lt;counter&gt;&lt;/counter&gt;
+	    &lt;/div&gt;
+	  `</span></span><span class="token punctuation">,</span>
+    <span class="token comment">// 使用对象展开运算符将此对象混入到外部对象中</span>
+    computed<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token function">localComputed</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">/* ... */</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token operator">...</span><span class="token function">mapState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+            <span class="token comment">//对象展开运算符， 相当于在computed下声明了mapState里的这些属性</span>
+            <span class="token comment">// 箭头函数可使代码更简练</span>
+            <span class="token function-variable function">count</span><span class="token punctuation">:</span> <span class="token parameter">state</span> <span class="token operator">=&gt;</span> state<span class="token punctuation">.</span>count<span class="token punctuation">,</span>
+
+            <span class="token comment">// 传字符串参数 'count' 等同于 `state =&gt; state.count`，就是将count属性，另取一个名字</span>
+            countAlias<span class="token punctuation">:</span> <span class="token string">'count'</span><span class="token punctuation">,</span>
+
+            <span class="token comment">// 为了能够使用 `this` 获取局部状态，必须使用常规函数</span>
+            <span class="token function">countPlusLocalState</span><span class="token punctuation">(</span><span class="token parameter">state</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">return</span> state<span class="token punctuation">.</span>count <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>localCount
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/xiaoyouyu/-/edit/master/docs/vue/vuex/README.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2019-5-6 14:42:11</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+                ←
+                <a href="/docs/vue/" class="prev router-link-active">Vue v2.x</a></span> <span class="next"><a href="/docs/vue/vue项目调试.html">vue项目调试</a>→
+            </span></p></div>  <div class="ValineComment" data-v-f04c7b36><hr data-v-f04c7b36> <span id="/docs/vue/vuex/" data-flag-title="Vuex 简介" class="leancloud-visitors" data-v-f04c7b36><em class="post-meta-item-text" data-v-f04c7b36>文章阅读量</em> <i class="leancloud-visitors-count" data-v-f04c7b36>...</i></span> <div id="vcomments" data-v-f04c7b36></div></div></main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/assets/js/app.200f72b3.js" defer></script><script src="/assets/js/3.c98e1996.js" defer></script><script src="/assets/js/2.67adf6fa.js" defer></script><script src="/assets/js/14.9e592b66.js" defer></script><script src="/assets/js/5.d8048fa3.js" defer></script>
+  </body>
+</html>
