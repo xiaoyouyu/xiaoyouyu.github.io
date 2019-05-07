@@ -10,10 +10,6 @@ module.exports = [
         href: '/manifest.json'
     }],
     ['meta', {
-        'http-equiv': 'cache-control',
-        'content': 'max-age=600',
-    }],
-    ['meta', {
         name: 'theme-color',
         content: '#3eaf7c'
     }],
@@ -30,8 +26,36 @@ module.exports = [
         content: 'black'
     }],
     ['link', {
+        rel: 'apple-touch-startup-image',
+        media:'(device-width: 320px)',
+        href: '/hbb/apple-launch-640x1136.png'
+    }],
+    ['link', {
+        rel: 'apple-touch-startup-image',
+        media:'(device-width: 375px)',
+        href: '/hbb/apple-launch-750x1334.png'
+    }],
+    ['link', {
+        rel: 'apple-touch-startup-image',
+        media:'(device-width: 414px)',
+        href: '/hbb/apple-launch-1242x2208.png'
+    }],
+    ['link', {
+        rel: 'apple-touch-startup-image',
+        media:'(device-width: 768px)',
+        href: '/hbb/apple-launch-1536x2048.png'
+    }],
+    ['link', {
         rel: 'apple-touch-icon',
-        href: '/icons/icon-152x152.png'
+        href: '/icons/icon-192x192.png'
+    }],
+    ['meta', {
+        name: 'msapplication-TileImage',
+        content: '/icons/icon-192x192.png'
+    }],
+    ['meta', {
+        name: 'msapplication-TileColor',
+        content: '#3eaf7c'
     }],
     ['link', {
         rel: 'mask-icon',
@@ -42,4 +66,7 @@ module.exports = [
         name: 'google-site-verification',
         content: secretKeyConf.googleSearchConsole
     }],
+    ['script', {
+        src: "//hm.baidu.com/hm.js?"+secretKeyConf.hm
+    }]
 ];

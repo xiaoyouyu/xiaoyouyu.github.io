@@ -27,11 +27,15 @@ export default {
     methods: {
         getMsg(){
             this.$nextTick(() => {
+                //iframe window
                 if(typeof window!=="undefined"){
                     var babygohome = window.frames["search_children"];
                     babygohome.domain='//qzonestyle.gtimg.cn/qzone_v6/lostchild/';
                     babygohome.document.write('<script type="text/javascript" src="'+babygohome.domain+'data.js"><\/script>');
                     babygohome.document.write('<script type="text/javascript" src="'+babygohome.domain+'page.js"><\/script>');
+                    babygohome.document.write(`<script type="text/javascript" >
+                        document.getElementsByClassName("side_infos")[0].style.display="none";
+                    <\/script>`);
                 }
             });
             return msgs[Math.floor(Math.random() * msgs.length)];

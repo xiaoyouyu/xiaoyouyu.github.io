@@ -12,8 +12,5 @@ module.exports = {
     '@vuepress/google-analytics': {
         'ga': secretKeyConf.ga
     },
-    'vuepress-plugin-baidu-autopush':{},//百度站点自动推送
-    'baidu-tongji':{//百度统计
-        'hm': secretKeyConf.hm
-    }
+    'vuepress-plugin-baidu-autopush':{}//百度站点自动推送
 };
