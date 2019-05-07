@@ -28,22 +28,22 @@ module.exports = [
     ['link', {
         rel: 'apple-touch-startup-image',
         media:'(device-width: 320px)',
-        href: '/hbb/apple-launch-640x1136.png'
+        href: '/icons/hbb/apple-launch-640x1136.png'
     }],
     ['link', {
         rel: 'apple-touch-startup-image',
         media:'(device-width: 375px)',
-        href: '/hbb/apple-launch-750x1334.png'
+        href: '/icons/hbb/apple-launch-750x1334.png'
     }],
     ['link', {
         rel: 'apple-touch-startup-image',
         media:'(device-width: 414px)',
-        href: '/hbb/apple-launch-1242x2208.png'
+        href: '/icons/hbb/apple-launch-1242x2208.png'
     }],
     ['link', {
         rel: 'apple-touch-startup-image',
         media:'(device-width: 768px)',
-        href: '/hbb/apple-launch-1536x2048.png'
+        href: '/icons/hbb/apple-launch-1536x2048.png'
     }],
     ['link', {
         rel: 'apple-touch-icon',
