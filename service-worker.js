@@ -182,10 +182,6 @@ self.__precacheManifest = [
   {
     "url": "icons/touch-bar.svg",
     "revision": "c4279f77fbbde00f515a9542868dba4d"
-  },
-  {
-    "url": "index.html",
-    "revision": "5c025ea9aaec6cecc204cbe0a34183cc"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
