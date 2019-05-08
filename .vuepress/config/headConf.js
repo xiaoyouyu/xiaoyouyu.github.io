@@ -9,21 +9,21 @@ module.exports = [
         rel: 'manifest',
         href: '/manifest.json'
     }],
-    ['meta', {
-        "Http-Equiv": 'pragma',
-        "content": 'no-cache'
-    }],
-    ['meta', {
-        "Http-Equiv": 'Cache-Control',
-        "content": 'no-store, must-revalidate'
-    }],
-    ['meta', {
-        "Http-Equiv": 'expires',
-        "content": 'Wed, 26 Feb 1997 08:21:57 GMT'
-    }],
+    // ['meta', {
+    //     "Http-Equiv": 'pragma',
+    //     "content": 'no-cache'
+    // }],
+    // ['meta', {
+    //     "Http-Equiv": 'Cache-Control',
+    //     "content": 'no-store, must-revalidate'
+    // }],
+    // ['meta', {
+    //     "Http-Equiv": 'expires',
+    //     "content": 'Wed, 26 Feb 1997 08:21:57 GMT'
+    // }],
     ['meta', {
         "Http-Equiv": 'X-UA-Compatible',
-        "content": 'IE=edge,chrome=1'
+        "content": 'IE=edge'
     }],
     ['meta', {
         "name": 'renderer',
