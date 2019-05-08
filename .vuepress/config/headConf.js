@@ -13,10 +13,10 @@ module.exports = [
     //     "Http-Equiv": 'pragma',
     //     "content": 'no-cache'
     // }],
-    // ['meta', {
-    //     "Http-Equiv": 'Cache-Control',
-    //     "content": 'no-store, must-revalidate'
-    // }],
+    ['meta', {
+        "Http-Equiv": 'Cache-Control',
+        "content": 'max-age=600'
+    }],
     // ['meta', {
     //     "Http-Equiv": 'expires',
     //     "content": 'Wed, 26 Feb 1997 08:21:57 GMT'
