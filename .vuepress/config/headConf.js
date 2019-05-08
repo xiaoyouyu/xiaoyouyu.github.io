@@ -47,7 +47,7 @@ module.exports = [
     }],
     ['link', {
         rel: 'apple-touch-icon',
-        href: '/icons/icon-192x192.png'
+        href: '/icons/icon-152x152.png'
     }],
     ['meta', {
         name: 'msapplication-TileImage',
