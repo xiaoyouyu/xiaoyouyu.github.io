@@ -183,10 +183,10 @@ self.__precacheManifest = [
     "url": "icons/touch-bar.svg",
     "revision": "c4279f77fbbde00f515a9542868dba4d"
   },
-  {
-    "url": "index.html",
-    "revision": "8b705a656e494395bbec4f835aaf66f6"
-  }
+//   {
+//     "url": "index.html",
+//     "revision": "8b705a656e494395bbec4f835aaf66f6"
+//   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
@@ -202,16 +202,34 @@ addEventListener('message', event => {
     )
   }
 })
-workbox.routing.registerRoute(
-    new RegExp('xiaoyouyu\.github\.io/index\.html'),
-    new workbox.strategies.StaleWhileRevalidate({
-        plugins: [
-            new workbox.broadcastUpdate.Plugin({
-                type: 'skip-waiting',
-            }),
-        ],
-    })
-);
+//监听fetch
 addEventListener('fetch', event => {
-    console.log(event);
+    console.log(event.request.referrer)
+    var s = event.request.referrer;
+    send_message_to_all_clients(s+"");
 })
+
+
+//=====================页面sw交互逻辑======================
+//sw发送信息给页面
+function send_message_to_all_clients(msg){
+    clients.matchAll().then(clients => {
+        clients.forEach(client => {
+            return new Promise(function(resolve, reject){
+                var msg_chan = new MessageChannel();
+                msg_chan.port1.onmessage = function(event){
+                    if(event.data.error){
+                        reject(event.data.error);
+                    }else{
+                        resolve(event.data);
+                    }
+                };
+                client.postMessage("sw说："+msg, [msg_chan.port2]);
+            });
+        })
+    })
+}
+//监听页面发送来的信息
+self.addEventListener('message', function(event){
+    console.log(event.data);
+});
