@@ -9,7 +9,7 @@
   dependencies:
     "@babel/highlight" "^7.0.0"
 
-"@babel/core@^7.0.0":
+"@babel/core@^7.0.0", "@babel/core@^7.3.4":
   version "7.4.4"
   resolved "https://registry.npm.taobao.org/@babel/core/download/@babel/core-7.4.4.tgz#84055750b05fcd50f9915a826b44fa347a825250"
   integrity sha1-hAVXULBfzVD5kVqCa0T6NHqCUlA=
@@ -7406,6 +7406,14 @@ svgo@^1.0.0:
     stable "^0.1.8"
     unquote "~1.1.1"
     util.promisify "~1.0.0"
+
+sw-register-webpack-plugin@^1.0.22:
+  version "1.0.22"
+  resolved "https://registry.npm.taobao.org/sw-register-webpack-plugin/download/sw-register-webpack-plugin-1.0.22.tgz#19d6034aeab660bd9d0a21889be5288cb896a767"
+  integrity sha1-GdYDSuq2YL2dCiGIm+UojLiWp2c=
+  dependencies:
+    "@babel/core" "^7.3.4"
+    minimatch "^3.0.4"
 
 table@^4.0.3:
   version "4.0.3"

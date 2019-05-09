@@ -2,6 +2,8 @@ const pluginConf = require('./config/pluginConf.js');
 const navConf = require('./config/navConf.js');
 const sidebarConf = require('./config/sidebarConf.js');
 const headConf = require('./config/headConf.js');
+const {SwRegisterPlugin} = require('sw-register-webpack-plugin');
+
 module.exports = {
     title: '小鱿鱼',
     //副标题
@@ -35,5 +37,14 @@ module.exports = {
         sidebar: sidebarConf
     },
     //不兼容IE低版本
-    evergreen: false
+    evergreen: false,
+    configureWebpack: (config, isServer) => {
+        if (!isServer) {
+            config.plugins.push(new SwRegisterPlugin({
+                version: 'v1',
+                filePath: './config/sw-register.js',
+                output: './sw-register.js'
+            }))
+        }
+    }
 }
