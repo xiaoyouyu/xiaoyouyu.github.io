@@ -202,13 +202,24 @@ addEventListener('message', event => {
     )
   }
 })
-//监听fetch
+//监听activate 缓存版本更新时触发
+// addEventListener('fetch', event => {
+    
+// })
+//监听fetch 拦截请求
 addEventListener('fetch', event => {
-    console.log(event.request.referrer)
-    var s = event.request.referrer;
-    send_message_to_all_clients(s+"");
+    console.log(event.request)
+    send_message_to_all_clients(JSON.stringify(event.request));
+    localStorage.setItem("detached_head",new Date()+"[d_h]"+event.request.referrer);
 })
-
+// if(Math.floor(time)<=10){//当访问首页的时间间隔小于10分钟，并且是退出再访问的情况，访问之前的页面
+//     let dh_url = event.request.referrer;
+//     let dh_arr = localStorage.getItem("detached_head").split("[d_h]")
+//     let time = (+new Date)-Number(dh_arr[0])/60000;
+//     if(Math.floor(time)<=10){
+//         send_message_to_all_clients(dh_arr[0]);
+//     }
+// }
 
 //=====================页面sw交互逻辑======================
 //sw发送信息给页面

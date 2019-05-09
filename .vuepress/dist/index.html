@@ -61,6 +61,8 @@
          // Handler for messages coming from the service worker
          navigator.serviceWorker.addEventListener('message', function(event){
              console.log(event.data);
+             //用于重定向到刚刚页面
+            //  location.href = event.data;
          });
      }
      send_message_to_sw("你好sw");
