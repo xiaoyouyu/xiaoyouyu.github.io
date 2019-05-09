@@ -11,7 +11,7 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 /**
  * The workboxSW.precacheAndRoute() method efficiently caches and responds to
@@ -21,7 +21,7 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "4b25546e37ff88ebc42ad6b162ee625e"
+    "revision": "73cb873c11f5a5ebc0de9c935caffab0"
   },
   {
     "url": "app.png",
@@ -36,24 +36,24 @@ self.__precacheManifest = [
     "revision": "83621669651b9a3d4bf64d1a670ad856"
   },
   {
-    "url": "assets/js/10.d5a5942e.js",
-    "revision": "4aff73e10f41f65f7f0ddc8e26b99d4d"
+    "url": "assets/js/10.6d8e79f3.js",
+    "revision": "c84fbf3dff3642ff7990174d801bcce8"
   },
   {
     "url": "assets/js/11.9391f651.js",
     "revision": "d0bfa77cf76fac506421a2c8044f3e81"
   },
   {
-    "url": "assets/js/12.374b6c08.js",
-    "revision": "a195e7c2ebb432ebe10d78172d9f408c"
+    "url": "assets/js/12.888dcfaf.js",
+    "revision": "23babe58cf72da8608bceb055a93e889"
   },
   {
-    "url": "assets/js/13.8d891f25.js",
-    "revision": "a717ce45ba415d22388063eb2ac0f109"
+    "url": "assets/js/13.485c557d.js",
+    "revision": "c8266df48229cddf3e4176255ca80c95"
   },
   {
-    "url": "assets/js/14.bf9f72b8.js",
-    "revision": "b5b4e7580742e87126b6f2cbd54e41a7"
+    "url": "assets/js/14.ff0f9c73.js",
+    "revision": "c0682dcb9d8086964e1a3d254616bf63"
   },
   {
     "url": "assets/js/15.3982d3e9.js",
@@ -92,40 +92,40 @@ self.__precacheManifest = [
     "revision": "ab63d662e29f64db0283400f69138a65"
   },
   {
-    "url": "assets/js/9.f97da9b5.js",
-    "revision": "12b709251fd0396d0c25aef5e456306d"
+    "url": "assets/js/9.fbe82aad.js",
+    "revision": "468bdff1d50219b66672b708a0602bca"
   },
   {
-    "url": "assets/js/app.3e4c3237.js",
-    "revision": "6f8455ef84ca786d2d82d9bceacc8257"
+    "url": "assets/js/app.adb5c751.js",
+    "revision": "edbc676292abd3f4e6233de92992e18b"
   },
   {
     "url": "docs/guide/index.html",
-    "revision": "86a6d9c4b9491f75e895bcc82f0e9d7e"
+    "revision": "e54098f0e5e077cae13076020ac50840"
   },
   {
     "url": "docs/markdown/Emoji表情包.html",
-    "revision": "de56448afbd2e8ab0e8d5be53a3125d5"
+    "revision": "18ea72707ca4fe021d83c6b1f70e27e1"
   },
   {
     "url": "docs/markdown/index.html",
-    "revision": "dc7161fe929beca59bbb92231e640f66"
+    "revision": "373106c77b219a93c16b544b1432d6dc"
   },
   {
     "url": "docs/svn/index.html",
-    "revision": "c25500d02f16cb4cbc00748cb45dc5a1"
+    "revision": "c0716c1e0c26bba0c3abfdea5675878c"
   },
   {
     "url": "docs/vue/index.html",
-    "revision": "c164d37f2c782b22455beaf4a4e4108b"
+    "revision": "5e739ff306694a11d660f24e6092db66"
   },
   {
     "url": "docs/vue/vuex/index.html",
-    "revision": "4d452ea339c7e25f8af36711e4bf2f67"
+    "revision": "90d141cc91899b5917ba0236ba88bc72"
   },
   {
     "url": "docs/vue/vue项目调试.html",
-    "revision": "1e5e5be249609965f354e4d93457dbf9"
+    "revision": "0b95d47669b164804a867ce06048f959"
   },
   {
     "url": "favicon-32x32.png",
@@ -185,40 +185,11 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "cf55343c1aa42f2558dd3fe7feac9432"
+    "revision": "8b705a656e494395bbec4f835aaf66f6"
   }
 ].concat(self.__precacheManifest || []);
-//调试开关
-// workbox.setConfig({
-//     debug: true
-//   });
-if(workbox){
-    console.log(workbox);
-}
-workbox.core.skipWaiting();
-workbox.core.clientsClaim();
-/*
-自定义监听
-const precacheController = new workbox.precaching.PrecacheController();
-precacheController.addToCacheList(self.__precacheManifest);
-self.addEventListener('install', (event) => {//注册监听
-    event.waitUntil(precacheController.install());
-});
-self.addEventListener('activate', (event) => {//活动监听
-    event.waitUntil(precacheController.cleanup());
-});
-self.addEventListener('fetch', (event) => {//请求监听
-    const cacheKey = precacheController.getCacheKeyForURL(event.request.url);
-    event.respondWith(caches.match(cacheKey).then());
-});
-*/
-
-//拦截请求设置路由策略
-workbox.routing.registerRoute(//首页设置NetworkFirst缓存策略
-    new RegExp('xiaoyouyu\.github\.io/index\.html'),
-    new workbox.strategies.StaleWhileRevalidate()
-);
-//添加事件监听
+workbox.precaching.suppressWarnings();
+workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 addEventListener('message', event => {
   const replyPort = event.ports[0]
   const message = event.data
@@ -230,4 +201,17 @@ addEventListener('message', event => {
       )
     )
   }
+})
+workbox.routing.registerRoute(
+    new RegExp('xiaoyouyu\.github\.io/index\.html'),
+    new workbox.strategies.StaleWhileRevalidate({
+        plugins: [
+            new workbox.broadcastUpdate.Plugin({
+                type: 'skip-waiting',
+            }),
+        ],
+    })
+);
+addEventListener('fetch', event => {
+    console.log(event);
 })
