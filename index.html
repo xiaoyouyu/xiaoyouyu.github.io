@@ -56,7 +56,7 @@
             navigator.serviceWorker.controller.postMessage("页面说："+msg, [msg_chan.port2]);
         });
      }
-     //接收sw发送来的信息
+     //监听sw发送来的信息
      if('serviceWorker' in navigator){
          // Handler for messages coming from the service worker
          navigator.serviceWorker.addEventListener('message', function(event){
