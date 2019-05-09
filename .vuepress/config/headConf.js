@@ -9,15 +9,15 @@ module.exports = [
         rel: 'manifest',
         href: '/manifest.json'
     }],
-    // ['meta', {
+    // ['meta', {//针对不支持pwa浏览器，缓存策略，首页不缓存
     //     "Http-Equiv": 'pragma',
     //     "content": 'no-cache'
     // }],
-    // ['meta', {
+    // ['meta', {//针对不支持pwa浏览器，缓存策略，首页不缓存
     //     "Http-Equiv": 'Cache-Control',
-    //     "content": 'max-age=600'
+    //     "content": 'no-store, must-revalidate'
     // }],
-    // ['meta', {
+    // ['meta', {//针对不支持pwa浏览器，缓存策略，首页不缓存
     //     "Http-Equiv": 'expires',
     //     "content": 'Wed, 26 Feb 1997 08:21:57 GMT'
     // }],
@@ -35,7 +35,7 @@ module.exports = [
     }],
     ['meta', {
         name: 'viewport',
-        content: 'width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no'
+        content: 'width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0'
     }],
     ['meta', {
         name: 'apple-mobile-web-app-capable',

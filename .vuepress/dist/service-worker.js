@@ -11,7 +11,7 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
+importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 /**
  * The workboxSW.precacheAndRoute() method efficiently caches and responds to
@@ -188,12 +188,37 @@ self.__precacheManifest = [
     "revision": "cf55343c1aa42f2558dd3fe7feac9432"
   }
 ].concat(self.__precacheManifest || []);
-workbox.precaching.suppressWarnings();
-workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
+//调试开关
+// workbox.setConfig({
+//     debug: true
+//   });
+if(workbox){
+    console.log(workbox);
+}
+workbox.core.skipWaiting();
+workbox.core.clientsClaim();
+/*
+自定义监听
+const precacheController = new workbox.precaching.PrecacheController();
+precacheController.addToCacheList(self.__precacheManifest);
+self.addEventListener('install', (event) => {//注册监听
+    event.waitUntil(precacheController.install());
+});
+self.addEventListener('activate', (event) => {//活动监听
+    event.waitUntil(precacheController.cleanup());
+});
+self.addEventListener('fetch', (event) => {//请求监听
+    const cacheKey = precacheController.getCacheKeyForURL(event.request.url);
+    event.respondWith(caches.match(cacheKey).then());
+});
+*/
+
+//拦截请求设置路由策略
 workbox.routing.registerRoute(//首页设置NetworkFirst缓存策略
     new RegExp('xiaoyouyu\.github\.io/index\.html'),
-    new workbox.strategies.NetworkFirst()
+    new workbox.strategies.StaleWhileRevalidate()
 );
+//添加事件监听
 addEventListener('message', event => {
   const replyPort = event.ports[0]
   const message = event.data
