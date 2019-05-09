@@ -21,7 +21,7 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "78c42de4897f32a69d5c640c23f81dc0"
+    "revision": "4b25546e37ff88ebc42ad6b162ee625e"
   },
   {
     "url": "app.png",
@@ -40,24 +40,24 @@ self.__precacheManifest = [
     "revision": "4aff73e10f41f65f7f0ddc8e26b99d4d"
   },
   {
-    "url": "assets/js/11.6804734c.js",
-    "revision": "266ac8861b6c5a968c12da6898721b42"
+    "url": "assets/js/11.9391f651.js",
+    "revision": "d0bfa77cf76fac506421a2c8044f3e81"
   },
   {
-    "url": "assets/js/12.4068585a.js",
-    "revision": "50f9f5561c350d56a1d1d76ee954a34f"
+    "url": "assets/js/12.374b6c08.js",
+    "revision": "a195e7c2ebb432ebe10d78172d9f408c"
   },
   {
     "url": "assets/js/13.8d891f25.js",
     "revision": "a717ce45ba415d22388063eb2ac0f109"
   },
   {
-    "url": "assets/js/14.ff0f9c73.js",
-    "revision": "c0682dcb9d8086964e1a3d254616bf63"
+    "url": "assets/js/14.bf9f72b8.js",
+    "revision": "b5b4e7580742e87126b6f2cbd54e41a7"
   },
   {
-    "url": "assets/js/15.0c842e93.js",
-    "revision": "5c30b90ace903325b9b1acf57b9e58ee"
+    "url": "assets/js/15.3982d3e9.js",
+    "revision": "0b514875029a076f254c78301900fd63"
   },
   {
     "url": "assets/js/16.501cc97a.js",
@@ -92,40 +92,40 @@ self.__precacheManifest = [
     "revision": "ab63d662e29f64db0283400f69138a65"
   },
   {
-    "url": "assets/js/9.fbe82aad.js",
-    "revision": "468bdff1d50219b66672b708a0602bca"
+    "url": "assets/js/9.f97da9b5.js",
+    "revision": "12b709251fd0396d0c25aef5e456306d"
   },
   {
-    "url": "assets/js/app.cf7536a0.js",
-    "revision": "f4824271787da7922f9f7564ff750488"
+    "url": "assets/js/app.3e4c3237.js",
+    "revision": "6f8455ef84ca786d2d82d9bceacc8257"
   },
   {
     "url": "docs/guide/index.html",
-    "revision": "06ee7efd0f1a1ef5012b7189ac05ca79"
+    "revision": "86a6d9c4b9491f75e895bcc82f0e9d7e"
   },
   {
     "url": "docs/markdown/Emoji表情包.html",
-    "revision": "ac475e18776b374bf7912e760e241da5"
+    "revision": "de56448afbd2e8ab0e8d5be53a3125d5"
   },
   {
     "url": "docs/markdown/index.html",
-    "revision": "0b1ea8845dbb21a0f7f733677f98f52d"
+    "revision": "dc7161fe929beca59bbb92231e640f66"
   },
   {
     "url": "docs/svn/index.html",
-    "revision": "adf581ddae7d25938a38741cbb336d1e"
+    "revision": "c25500d02f16cb4cbc00748cb45dc5a1"
   },
   {
     "url": "docs/vue/index.html",
-    "revision": "3df9568095ab4eb23c41a87cfa4e16b7"
+    "revision": "c164d37f2c782b22455beaf4a4e4108b"
   },
   {
     "url": "docs/vue/vuex/index.html",
-    "revision": "490c46a099570edfff20ebb336a60358"
+    "revision": "4d452ea339c7e25f8af36711e4bf2f67"
   },
   {
     "url": "docs/vue/vue项目调试.html",
-    "revision": "7ffe400609304af3f21e74617708ad84"
+    "revision": "1e5e5be249609965f354e4d93457dbf9"
   },
   {
     "url": "favicon-32x32.png",
@@ -185,11 +185,15 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "6a19c39dbad931cea2d3d470db73bde2"
+    "revision": "cf55343c1aa42f2558dd3fe7feac9432"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
+workbox.routing.registerRoute(//首页设置NetworkFirst缓存策略
+    new RegExp('xiaoyouyu\.github\.io/index\.html'),
+    new workbox.strategies.NetworkFirst()
+);
 addEventListener('message', event => {
   const replyPort = event.ports[0]
   const message = event.data
