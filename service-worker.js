@@ -21,7 +21,7 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "73cb873c11f5a5ebc0de9c935caffab0"
+    "revision": "0ecfb064e472cfe4033a4886f480036f"
   },
   {
     "url": "app.png",
@@ -36,47 +36,47 @@ self.__precacheManifest = [
     "revision": "83621669651b9a3d4bf64d1a670ad856"
   },
   {
-    "url": "assets/js/10.6d8e79f3.js",
-    "revision": "c84fbf3dff3642ff7990174d801bcce8"
+    "url": "assets/js/10.e26a104e.js",
+    "revision": "8750dda04d0e76a2bca3ef6ff8cec064"
   },
   {
-    "url": "assets/js/11.9391f651.js",
-    "revision": "d0bfa77cf76fac506421a2c8044f3e81"
+    "url": "assets/js/11.0286dd3e.js",
+    "revision": "e8257eb6c234466a399b8a663e785365"
   },
   {
-    "url": "assets/js/12.888dcfaf.js",
-    "revision": "23babe58cf72da8608bceb055a93e889"
+    "url": "assets/js/12.be043413.js",
+    "revision": "d46aad511a3df8b753141b1a64a3f2d6"
   },
   {
-    "url": "assets/js/13.485c557d.js",
-    "revision": "c8266df48229cddf3e4176255ca80c95"
+    "url": "assets/js/13.150e6982.js",
+    "revision": "f2d468a5287d238d54db5700b0fae380"
   },
   {
-    "url": "assets/js/14.ff0f9c73.js",
-    "revision": "c0682dcb9d8086964e1a3d254616bf63"
+    "url": "assets/js/14.0861b77d.js",
+    "revision": "25c85a173bc1c833fd3bc2981f94c08c"
   },
   {
-    "url": "assets/js/15.3982d3e9.js",
-    "revision": "0b514875029a076f254c78301900fd63"
+    "url": "assets/js/15.346e465b.js",
+    "revision": "b822ebd80f329e58d6c155fed3f0de8e"
   },
   {
     "url": "assets/js/16.501cc97a.js",
     "revision": "a788190479952dc749cd1497101b430a"
   },
   {
-    "url": "assets/js/2.67adf6fa.js",
+    "url": "assets/js/2.75efd22a.js",
     "revision": "b30b6965aa4e35d014e3f71d30c535a3"
   },
   {
-    "url": "assets/js/3.c98e1996.js",
+    "url": "assets/js/3.b2a607a4.js",
     "revision": "2bb6e6df0754abc9e73b6b122f565611"
   },
   {
-    "url": "assets/js/4.32511c13.js",
+    "url": "assets/js/4.874702b5.js",
     "revision": "b87fe4a217261b00b2ab985e3d0c9196"
   },
   {
-    "url": "assets/js/5.d8048fa3.js",
+    "url": "assets/js/5.af83c3ca.js",
     "revision": "25c34fc4aa777ad998ecddf31d442cd7"
   },
   {
@@ -84,48 +84,48 @@ self.__precacheManifest = [
     "revision": "20ac8c8c4614525d32683579dc2e2141"
   },
   {
-    "url": "assets/js/7.99d30589.js",
+    "url": "assets/js/7.56f6e81d.js",
     "revision": "e76bdf174f3be5925faa0c5f7b990c69"
   },
   {
-    "url": "assets/js/8.bfb5acc5.js",
+    "url": "assets/js/8.cebae856.js",
     "revision": "ab63d662e29f64db0283400f69138a65"
   },
   {
-    "url": "assets/js/9.fbe82aad.js",
+    "url": "assets/js/9.2cc06225.js",
     "revision": "468bdff1d50219b66672b708a0602bca"
   },
   {
-    "url": "assets/js/app.adb5c751.js",
-    "revision": "edbc676292abd3f4e6233de92992e18b"
+    "url": "assets/js/app.e05aee0e.js",
+    "revision": "f21a9626f2996115da90582740588858"
   },
   {
     "url": "docs/guide/index.html",
-    "revision": "e54098f0e5e077cae13076020ac50840"
+    "revision": "d2894e8cb2e7e1e1d989df6c54a51d91"
   },
   {
     "url": "docs/markdown/Emoji表情包.html",
-    "revision": "18ea72707ca4fe021d83c6b1f70e27e1"
+    "revision": "343e3126a60c7893a29ce2d81164813c"
   },
   {
     "url": "docs/markdown/index.html",
-    "revision": "373106c77b219a93c16b544b1432d6dc"
+    "revision": "43e5460bbacf9e914112e325c49a53d4"
   },
   {
     "url": "docs/svn/index.html",
-    "revision": "c0716c1e0c26bba0c3abfdea5675878c"
+    "revision": "37eb0e89ac6968b18cb97cd66331224b"
   },
   {
     "url": "docs/vue/index.html",
-    "revision": "5e739ff306694a11d660f24e6092db66"
+    "revision": "83c8f8ffac5f45f0568865d1c1d51e71"
   },
   {
     "url": "docs/vue/vuex/index.html",
-    "revision": "90d141cc91899b5917ba0236ba88bc72"
+    "revision": "22a1aaabd307892f6ea703f930b41202"
   },
   {
     "url": "docs/vue/vue项目调试.html",
-    "revision": "0b95d47669b164804a867ce06048f959"
+    "revision": "9a13109d347e66c13f0b5252357e9b0e"
   },
   {
     "url": "favicon-32x32.png",
@@ -183,10 +183,14 @@ self.__precacheManifest = [
     "url": "icons/touch-bar.svg",
     "revision": "c4279f77fbbde00f515a9542868dba4d"
   },
-//   {
-//     "url": "index.html",
-//     "revision": "8b705a656e494395bbec4f835aaf66f6"
-//   }
+  {
+    "url": "index.html",
+    "revision": "0a22899681ffb9edb2b2349ef6314b72"
+  },
+  {
+    "url": "sw-register.js",
+    "revision": "34d70d58eeb6fdcc6970f46283ec6237"
+  }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
@@ -202,45 +206,3 @@ addEventListener('message', event => {
     )
   }
 })
-//监听activate 缓存版本更新时触发
-// addEventListener('fetch', event => {
-    
-// })
-//监听fetch 拦截请求
-addEventListener('fetch', event => {
-    console.log(event.request)
-    send_message_to_all_clients(JSON.stringify(event.request));
-    localStorage.setItem("detached_head",new Date()+"[d_h]"+event.request.referrer);
-})
-// if(Math.floor(time)<=10){//当访问首页的时间间隔小于10分钟，并且是退出再访问的情况，访问之前的页面
-//     let dh_url = event.request.referrer;
-//     let dh_arr = localStorage.getItem("detached_head").split("[d_h]")
-//     let time = (+new Date)-Number(dh_arr[0])/60000;
-//     if(Math.floor(time)<=10){
-//         send_message_to_all_clients(dh_arr[0]);
-//     }
-// }
-
-//=====================页面sw交互逻辑======================
-//sw发送信息给页面
-function send_message_to_all_clients(msg){
-    clients.matchAll().then(clients => {
-        clients.forEach(client => {
-            return new Promise(function(resolve, reject){
-                var msg_chan = new MessageChannel();
-                msg_chan.port1.onmessage = function(event){
-                    if(event.data.error){
-                        reject(event.data.error);
-                    }else{
-                        resolve(event.data);
-                    }
-                };
-                client.postMessage("sw说："+msg, [msg_chan.port2]);
-            });
-        })
-    })
-}
-//监听页面发送来的信息
-self.addEventListener('message', function(event){
-    console.log(event.data);
-});
