@@ -41,7 +41,7 @@ module.exports = {
     configureWebpack: (config, isServer) => {
         if (!isServer) {
             config.plugins.push(new SwRegisterPlugin({
-                version: 'v1',
+                version: +new Date,
                 filePath: './config/sw-register.js',
                 output: './sw-register.js'
             }))

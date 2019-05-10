@@ -193,22 +193,22 @@ self.__precacheManifest = [{
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
-addEventListener('message', event => {
-    const replyPort = event.ports[0]
-    const message = event.data
-    if (replyPort && message && message.type === 'skip-waiting') {
-        event.waitUntil(
-            self.skipWaiting().then(
-                () => replyPort.postMessage({
-                    error: null
-                }),
-                error => replyPort.postMessage({
-                    error
-                })
-            )
-        )
-    }
-})
+// addEventListener('message', event => {
+//     const replyPort = event.ports[0]
+//     const message = event.data
+//     if (replyPort && message && message.type === 'skip-waiting') {
+//         event.waitUntil(
+//             self.skipWaiting().then(
+//                 () => replyPort.postMessage({
+//                     error: null
+//                 }),
+//                 error => replyPort.postMessage({
+//                     error
+//                 })
+//             )
+//         )
+//     }
+// })
 addEventListener('activate', function (event) {
     send_message_to_all_clients("sw.update");
 });
