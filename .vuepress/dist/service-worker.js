@@ -206,3 +206,24 @@ addEventListener('message', event => {
     )
   }
 })
+addEventListener('activate', function(event) {
+    send_message_to_all_clients("sw.update");
+});
+//sw发送信息给页面
+function send_message_to_all_clients(msg){
+    clients.matchAll().then(clients => {
+        clients.forEach(client => {
+            return new Promise(function(resolve, reject){
+                var msg_chan = new MessageChannel();
+                msg_chan.port1.onmessage = function(event){
+                    if(event.data.error){
+                        reject(event.data.error);
+                    }else{
+                        resolve(event.data);
+                    }
+                };
+                client.postMessage(msg, [msg_chan.port2]);
+            });
+        })
+    })
+}
