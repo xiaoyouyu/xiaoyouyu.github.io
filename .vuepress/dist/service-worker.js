@@ -193,7 +193,7 @@ self.__precacheManifest = [{
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
-addEventListener('activate', function (event) {
+self.addEventListener('activate', function (event) {
     send_message_to_all_clients("sw.update");
 });
 //sw发送信息给页面
