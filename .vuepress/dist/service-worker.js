@@ -20,7 +20,7 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
  */
 self.__precacheManifest = [{
         "url": "404.html",
-        "revision": "a87653886981a551b38dadb7c15058f8"
+        "revision": "46f1fc4a62b64611de5844e1ab4feed6"
     },
     {
         "url": "app.png",
@@ -39,24 +39,24 @@ self.__precacheManifest = [{
         "revision": "7db94ef742e10d2047372eca12f0e09d"
     },
     {
-        "url": "assets/js/11.6c1f544c.js",
-        "revision": "c499f3b987e346502e59bb71f8b59fff"
+        "url": "assets/js/11.f499e1bc.js",
+        "revision": "d0bfa77cf76fac506421a2c8044f3e81"
     },
     {
-        "url": "assets/js/12.c26f6720.js",
-        "revision": "8d67956ef45ec7b62df94cef25b8f61c"
+        "url": "assets/js/12.86989175.js",
+        "revision": "d46aad511a3df8b753141b1a64a3f2d6"
     },
     {
-        "url": "assets/js/13.aad9b39b.js",
-        "revision": "c8266df48229cddf3e4176255ca80c95"
+        "url": "assets/js/13.d3f63afe.js",
+        "revision": "a717ce45ba415d22388063eb2ac0f109"
     },
     {
-        "url": "assets/js/14.c074ff08.js",
-        "revision": "c0682dcb9d8086964e1a3d254616bf63"
+        "url": "assets/js/14.9d67f889.js",
+        "revision": "b5b4e7580742e87126b6f2cbd54e41a7"
     },
     {
-        "url": "assets/js/15.731701f2.js",
-        "revision": "5c30b90ace903325b9b1acf57b9e58ee"
+        "url": "assets/js/15.37a3cf5f.js",
+        "revision": "b822ebd80f329e58d6c155fed3f0de8e"
     },
     {
         "url": "assets/js/16.501cc97a.js",
@@ -91,40 +91,40 @@ self.__precacheManifest = [{
         "revision": "ab63d662e29f64db0283400f69138a65"
     },
     {
-        "url": "assets/js/9.07ac8277.js",
-        "revision": "457cd98d04cddd1928eb8e71f9aaade2"
+        "url": "assets/js/9.14779444.js",
+        "revision": "468bdff1d50219b66672b708a0602bca"
     },
     {
-        "url": "assets/js/app.0ba446fd.js",
-        "revision": "5182931ee921645f20ed4980d9b00b28"
+        "url": "assets/js/app.8c5c62f1.js",
+        "revision": "1d2b2a095388a90d79e6b57bb732e7d0"
     },
     {
         "url": "docs/guide/index.html",
-        "revision": "bece925aada4320dce09e3d788c0a468"
+        "revision": "cbe0e158f2d99b8fccbc09cfd06ced04"
     },
     {
         "url": "docs/markdown/Emoji表情包.html",
-        "revision": "92e200cb10c46ec4fcb3640eb19d6aab"
+        "revision": "52894b5bbdd8a325cf533b174511b187"
     },
     {
         "url": "docs/markdown/index.html",
-        "revision": "0c95fe65a7574be82ccda638f4c3b0b4"
+        "revision": "d0714173ae7f99225ee8974f24d41103"
     },
     {
         "url": "docs/svn/index.html",
-        "revision": "07e06cd79e140223fdbda33a11d83d90"
+        "revision": "9d9a91e7c6a5fb72baf928cea7e6ce6c"
     },
     {
         "url": "docs/vue/index.html",
-        "revision": "40ad3d0c2a1c94e4bde6d7c774c890ff"
+        "revision": "b0d4d08b4bcde17c0217ee28c8bb1138"
     },
     {
         "url": "docs/vue/vuex/index.html",
-        "revision": "bdb019cdcd92a1c5ec7529b22b3e6be7"
+        "revision": "19f483e2163937b30f1adb823054d92c"
     },
     {
         "url": "docs/vue/vue项目调试.html",
-        "revision": "be014395afb8b1a6db8605dca3ee45fc"
+        "revision": "39e3be576661181884c2e7dd62105306"
     },
     {
         "url": "favicon-32x32.png",
@@ -184,11 +184,16 @@ self.__precacheManifest = [{
     },
     {
         "url": "index.html",
-        "revision": "ced0ce8e75380a49463c7474c39547fd"
+        "revision": "f81a8babf80dd7397f86d99f9885e9aa"
+    },
+    {
+        "url": "sw-register.js",
+        "revision": "d5a5c7ca8f5a204d8c3b41151e541f3b"
     }
 ].concat(self.__precacheManifest || []);
-workbox.precaching.suppressWarnings();
-workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
+workbox.skipWaiting();
+workbox.clientsClaim();
+workbox.precaching.precacheAndRoute(self.__precacheManifest || {});
 self.addEventListener('activate', function (event) {
     send_message_to_all_clients("sw.update");
 });

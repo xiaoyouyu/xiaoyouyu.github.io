@@ -1,4 +1,4 @@
-navigator.serviceWorker && navigator.serviceWorker.register("/service-worker.js?v=1557495752861").then(function () {
+navigator.serviceWorker && navigator.serviceWorker.register("/service-worker.js?v=1557497867397").then(function () {
     navigator.serviceWorker.addEventListener("message", function (e) {
         if (e.data === "sw.update") {
             var themeColor = document.querySelector("meta[name=theme-color]");
