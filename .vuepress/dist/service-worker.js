@@ -186,10 +186,6 @@ self.__precacheManifest = [
   {
     "url": "index.html",
     "revision": "5b47a6a35a02e119d81ab82619967181"
-  },
-  {
-    "url": "sw-register.js",
-    "revision": "b42a87b876c4cf27577ba18a15a04572"
   }
 ].concat(self.__precacheManifest || []);
 workbox.skipWaiting();
