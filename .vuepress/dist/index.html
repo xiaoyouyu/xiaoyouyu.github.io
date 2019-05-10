@@ -38,5 +38,15 @@
     MIT Licensed | Copyright © 2019 小鱿鱼
   </div></main></div><div class="global-ui"><!----><!----></div></div>
     <script src="/assets/js/app.0ba446fd.js" defer></script><script src="/assets/js/3.856021c4.js" defer></script><script src="/assets/js/2.a9a68986.js" defer></script><script src="/assets/js/8.f13536ac.js" defer></script><script src="/assets/js/5.4f972972.js" defer></script>
-  </body>
+    <script>
+        window.onload = function () {
+        var script = document.createElement('script');
+        var firstScript = document.getElementsByTagName('script')[0];
+        script.type = 'text/javascript';
+        script.async = true;
+        script.src = '/sw-register.js?v=' + Date.now();
+        firstScript.parentNode.insertBefore(script, firstScript);
+        };
+        </script>
+</body>
 </html>
