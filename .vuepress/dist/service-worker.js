@@ -192,17 +192,28 @@ self.__precacheManifest = [
     "revision": "b42a87b876c4cf27577ba18a15a04572"
   }
 ].concat(self.__precacheManifest || []);
-workbox.precaching.suppressWarnings();
-workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
-addEventListener('message', event => {
-  const replyPort = event.ports[0]
-  const message = event.data
-  if (replyPort && message && message.type === 'skip-waiting') {
-    event.waitUntil(
-      self.skipWaiting().then(
-        () => replyPort.postMessage({ error: null }),
-        error => replyPort.postMessage({ error })
-      )
-    )
-  }
-})
+workbox.skipWaiting();
+workbox.clientsClaim();
+workbox.precaching.precacheAndRoute(self.__precacheManifest || {});
+self.addEventListener('activate', function (event) {
+    send_message_to_all_clients("sw.update");
+});
+//sw发送信息给页面
+function send_message_to_all_clients(msg) {
+    clients.matchAll().then(clients => {
+        clients.forEach(client => {
+            return new Promise(function (resolve, reject) {
+                var msg_chan = new MessageChannel();
+                msg_chan.port1.onmessage = function (event) {
+                    if (event.data.error) {
+                        reject(event.data.error);
+                    } else {
+                        resolve(event.data);
+                    }
+                };
+                client.postMessage(msg, [msg_chan.port2]);
+            });
+        })
+    })
+}
+
