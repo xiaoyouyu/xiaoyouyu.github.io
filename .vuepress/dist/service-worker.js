@@ -185,10 +185,6 @@ self.__precacheManifest = [{
     {
         "url": "index.html",
         "revision": "ced0ce8e75380a49463c7474c39547fd"
-    },
-    {
-        "url": "sw-register.js",
-        "revision": "b832fb6cebd5c20a59bc38c0c5f962e8"
     }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
