@@ -27,107 +27,111 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "8a98829ee9d00f9190de72ea664d47b0"
+    "revision": "c33034fae9a956f1586ea1dc51cde1b2"
   },
   {
     "url": "app.png",
     "revision": "daf2b980da9988091a28e0e300ba604c"
   },
   {
-    "url": "assets/css/0.styles.a1803f11.css",
-    "revision": "d57bd4134ee2c7e2e82f3ae2a8d65946"
+    "url": "assets/css/0.styles.f019790a.css",
+    "revision": "5a4df30ba26765b03e79a380f796ff97"
   },
   {
     "url": "assets/img/search.83621669.svg",
     "revision": "83621669651b9a3d4bf64d1a670ad856"
   },
   {
-    "url": "assets/js/10.8951ddec.js",
-    "revision": "2fc775f3285cb6a0bd39615c47e774c5"
+    "url": "assets/js/10.3b0cea6b.js",
+    "revision": "7db94ef742e10d2047372eca12f0e09d"
   },
   {
-    "url": "assets/js/11.b1dbc3b2.js",
-    "revision": "a3e832246d1ec0280b32325a328884c8"
+    "url": "assets/js/11.7bf3b7d8.js",
+    "revision": "c499f3b987e346502e59bb71f8b59fff"
   },
   {
-    "url": "assets/js/12.e05301cf.js",
-    "revision": "1dc87dcb2ad71540da579a8ac8d28ff0"
+    "url": "assets/js/12.a5cc70d0.js",
+    "revision": "384f4847eb04a51cdac6bedf62010e39"
   },
   {
-    "url": "assets/js/13.19d129ff.js",
-    "revision": "9e4faf6bf3433886612a97fd2dee0d88"
+    "url": "assets/js/13.976ede78.js",
+    "revision": "a717ce45ba415d22388063eb2ac0f109"
   },
   {
-    "url": "assets/js/14.67774d12.js",
-    "revision": "ffb361910755442afba6d594b9be0d45"
+    "url": "assets/js/14.d605463d.js",
+    "revision": "6294be04dfa4743ab5efbc81515d4720"
   },
   {
-    "url": "assets/js/15.007e57dd.js",
-    "revision": "5ea0890d474d000af881bdf676485cd4"
+    "url": "assets/js/15.60aef1c3.js",
+    "revision": "b822ebd80f329e58d6c155fed3f0de8e"
   },
   {
-    "url": "assets/js/2.758407b3.js",
-    "revision": "eb6e75c9b6fbe4e96cf456094d02bcb1"
+    "url": "assets/js/16.501cc97a.js",
+    "revision": "a788190479952dc749cd1497101b430a"
   },
   {
-    "url": "assets/js/3.916bc5db.js",
-    "revision": "fb163a65da2ae1916a8d77ab5727253d"
+    "url": "assets/js/2.82ac1a7a.js",
+    "revision": "b30b6965aa4e35d014e3f71d30c535a3"
   },
   {
-    "url": "assets/js/4.56e2bd05.js",
-    "revision": "91acf64b133c8328ee6cd22ceb2a80dc"
+    "url": "assets/js/3.e7824d3c.js",
+    "revision": "2bb6e6df0754abc9e73b6b122f565611"
   },
   {
-    "url": "assets/js/5.0589bc8b.js",
-    "revision": "c80f99461da2f3d3e19c644008dc6d4c"
+    "url": "assets/js/4.5e4465c6.js",
+    "revision": "b87fe4a217261b00b2ab985e3d0c9196"
   },
   {
-    "url": "assets/js/6.ab1b8e7b.js",
-    "revision": "3939bf25fe11f1dc24415d7a7212cc46"
+    "url": "assets/js/5.10e5a2f7.js",
+    "revision": "94f98832a2021c82859bc44cf1960bfb"
   },
   {
-    "url": "assets/js/7.738281e2.js",
-    "revision": "eb27f4c1411df6686957500cb15f659d"
+    "url": "assets/js/6.e13555a6.js",
+    "revision": "20ac8c8c4614525d32683579dc2e2141"
   },
   {
-    "url": "assets/js/8.2d0d6b20.js",
-    "revision": "8e606e77951c3a9ca85e2077b027de3b"
+    "url": "assets/js/7.16c7ae1d.js",
+    "revision": "e76bdf174f3be5925faa0c5f7b990c69"
   },
   {
-    "url": "assets/js/9.e87a6d40.js",
-    "revision": "bd1a85783ccc540dd877ec0df1d903f3"
+    "url": "assets/js/8.a3006d13.js",
+    "revision": "be44bf044a51cc2a22add63e4f106531"
   },
   {
-    "url": "assets/js/app.21b80185.js",
-    "revision": "e8012754d44cbad2c385dff95b344a9d"
+    "url": "assets/js/9.6fb8dcea.js",
+    "revision": "430a98c851d77eda4d1a745b7ee85eed"
+  },
+  {
+    "url": "assets/js/app.554ab09b.js",
+    "revision": "d97c9f95b6e96c7c0a828aee5240ed78"
   },
   {
     "url": "docs/guide/index.html",
-    "revision": "b6a4ed8291f3cf990df9e4c5425f2c15"
+    "revision": "fd402f7171bfaddd825ee2d8aea3783c"
   },
   {
     "url": "docs/markdown/Emoji表情包.html",
-    "revision": "133197dc4eeedc1d43c479d4188abd3c"
+    "revision": "e4012fb66575b669e22c86aa27fb2b50"
   },
   {
     "url": "docs/markdown/index.html",
-    "revision": "3397868e2de211b9d567e6961d1c666d"
+    "revision": "d7114f4fc78345949abbfa9e30efa852"
   },
   {
     "url": "docs/svn/index.html",
-    "revision": "e5c154e38fd824354f8059dbbcdc73aa"
+    "revision": "357948420f7f2e736e01900770362120"
   },
   {
     "url": "docs/vue/index.html",
-    "revision": "b2b7c0aea8748b7ec17cedd99e71077e"
+    "revision": "bc1939b00ca89e1a5d8cfb14b21cf0b2"
   },
   {
     "url": "docs/vue/vuex/index.html",
-    "revision": "a154f93b9cd00d4d0e7b8b7681fb7e0e"
+    "revision": "faa6c29918e3d7331c19baa7651e0f60"
   },
   {
     "url": "docs/vue/vue项目调试.html",
-    "revision": "2a7d52a1d4cfa76e3dc143565282ed90"
+    "revision": "1d686a9e8d468c367541d700ff531b5e"
   },
   {
     "url": "favicon-32x32.png",
@@ -187,31 +191,19 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "989b6560810de4b1b43d787e2d8b7f6c"
+    "revision": "f6dda69397c8d44fe2d60b69fa2c52bf"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
-workbox.core.skipWaiting();
-workbox.core.clientsClaim();
-self.addEventListener('activate', function (event) {
-    send_message_to_all_clients("sw.update");
-});
-//sw发送信息给页面
-function send_message_to_all_clients(msg) {
-    clients.matchAll().then(clients => {
-        clients.forEach(client => {
-            return new Promise(function (resolve, reject) {
-                var msg_chan = new MessageChannel();
-                msg_chan.port1.onmessage = function (event) {
-                    if (event.data.error) {
-                        reject(event.data.error);
-                    } else {
-                        resolve(event.data);
-                    }
-                };
-                client.postMessage(msg, [msg_chan.port2]);
-            });
-        })
-    })
-}
-workbox.routing.registerRoute(/\/sw-register\.js/,workbox.strategies.networkOnly());
+addEventListener('message', event => {
+    const replyPort = event.ports[0]
+    const message = event.data
+    if (replyPort && message && message.type === 'skip-waiting') {
+      event.waitUntil(
+        self.skipWaiting().then(
+          () => replyPort.postMessage({ error: null }),
+          error => replyPort.postMessage({ error })
+        )
+      )
+    }
+  })
