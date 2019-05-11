@@ -27,130 +27,126 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "c33034fae9a956f1586ea1dc51cde1b2"
+    "revision": "1089c745d92203d0a05b388498eb519d"
   },
   {
     "url": "app.png",
     "revision": "daf2b980da9988091a28e0e300ba604c"
   },
   {
-    "url": "assets/css/0.styles.f019790a.css",
-    "revision": "5a4df30ba26765b03e79a380f796ff97"
+    "url": "assets/css/0.styles.a1803f11.css",
+    "revision": "d57bd4134ee2c7e2e82f3ae2a8d65946"
   },
   {
     "url": "assets/img/search.83621669.svg",
     "revision": "83621669651b9a3d4bf64d1a670ad856"
   },
   {
-    "url": "assets/js/10.3b0cea6b.js",
-    "revision": "7db94ef742e10d2047372eca12f0e09d"
+    "url": "assets/js/10.cf7fdbc5.js",
+    "revision": "5f47c60f5c1f761c002dd910b685d971"
   },
   {
-    "url": "assets/js/11.7bf3b7d8.js",
-    "revision": "c499f3b987e346502e59bb71f8b59fff"
+    "url": "assets/js/11.096fd395.js",
+    "revision": "9a9cff1260298f77b978cb76a0639e83"
   },
   {
-    "url": "assets/js/12.a5cc70d0.js",
-    "revision": "384f4847eb04a51cdac6bedf62010e39"
+    "url": "assets/js/12.f5ebd06b.js",
+    "revision": "6aa77a4a18b2d5de8c62b7c1f3099254"
   },
   {
-    "url": "assets/js/13.976ede78.js",
-    "revision": "a717ce45ba415d22388063eb2ac0f109"
+    "url": "assets/js/13.04982187.js",
+    "revision": "f3d25f07ec33ea3655d0a3a3418e31d4"
   },
   {
-    "url": "assets/js/14.d605463d.js",
-    "revision": "6294be04dfa4743ab5efbc81515d4720"
+    "url": "assets/js/14.11cc9bd7.js",
+    "revision": "a69cd4879438e66eb3a433226d6df8e1"
   },
   {
-    "url": "assets/js/15.60aef1c3.js",
-    "revision": "b822ebd80f329e58d6c155fed3f0de8e"
+    "url": "assets/js/15.007e57dd.js",
+    "revision": "5ea0890d474d000af881bdf676485cd4"
   },
   {
-    "url": "assets/js/16.501cc97a.js",
-    "revision": "a788190479952dc749cd1497101b430a"
+    "url": "assets/js/2.758407b3.js",
+    "revision": "eb6e75c9b6fbe4e96cf456094d02bcb1"
   },
   {
-    "url": "assets/js/2.82ac1a7a.js",
-    "revision": "b30b6965aa4e35d014e3f71d30c535a3"
+    "url": "assets/js/3.916bc5db.js",
+    "revision": "fb163a65da2ae1916a8d77ab5727253d"
   },
   {
-    "url": "assets/js/3.e7824d3c.js",
-    "revision": "2bb6e6df0754abc9e73b6b122f565611"
+    "url": "assets/js/4.56e2bd05.js",
+    "revision": "91acf64b133c8328ee6cd22ceb2a80dc"
   },
   {
-    "url": "assets/js/4.5e4465c6.js",
-    "revision": "b87fe4a217261b00b2ab985e3d0c9196"
+    "url": "assets/js/5.0589bc8b.js",
+    "revision": "c80f99461da2f3d3e19c644008dc6d4c"
   },
   {
-    "url": "assets/js/5.10e5a2f7.js",
-    "revision": "94f98832a2021c82859bc44cf1960bfb"
+    "url": "assets/js/6.ab1b8e7b.js",
+    "revision": "3939bf25fe11f1dc24415d7a7212cc46"
   },
   {
-    "url": "assets/js/6.e13555a6.js",
-    "revision": "20ac8c8c4614525d32683579dc2e2141"
+    "url": "assets/js/7.738281e2.js",
+    "revision": "eb27f4c1411df6686957500cb15f659d"
   },
   {
-    "url": "assets/js/7.16c7ae1d.js",
-    "revision": "e76bdf174f3be5925faa0c5f7b990c69"
+    "url": "assets/js/8.7803a2ba.js",
+    "revision": "32b9f9cf342a16a17683973e99a9724c"
   },
   {
-    "url": "assets/js/8.a3006d13.js",
-    "revision": "be44bf044a51cc2a22add63e4f106531"
+    "url": "assets/js/9.a4616b6a.js",
+    "revision": "039d35cb23c79e759e4c2b300b63eaa1"
   },
   {
-    "url": "assets/js/9.6fb8dcea.js",
-    "revision": "430a98c851d77eda4d1a745b7ee85eed"
-  },
-  {
-    "url": "assets/js/app.554ab09b.js",
-    "revision": "d97c9f95b6e96c7c0a828aee5240ed78"
+    "url": "assets/js/app.6ff36307.js",
+    "revision": "c9cafd9423fd74e67ef3ef284992c405"
   },
   {
     "url": "docs/guide/index.html",
-    "revision": "fd402f7171bfaddd825ee2d8aea3783c"
+    "revision": "92f0ef1a65afb1eb24be50f088977c1b"
   },
   {
     "url": "docs/markdown/Emoji表情包.html",
-    "revision": "e4012fb66575b669e22c86aa27fb2b50"
+    "revision": "e4cbb581bb8f1048a3b95232b42a39b2"
   },
   {
     "url": "docs/markdown/index.html",
-    "revision": "d7114f4fc78345949abbfa9e30efa852"
+    "revision": "27eb9a6cfb9bd4d1d3181aa3919caaf7"
   },
   {
     "url": "docs/svn/index.html",
-    "revision": "357948420f7f2e736e01900770362120"
+    "revision": "a24ed635a042da0edbe426641a77767d"
   },
   {
     "url": "docs/vue/index.html",
-    "revision": "bc1939b00ca89e1a5d8cfb14b21cf0b2"
+    "revision": "c8b7a8e5ba18bc10c449babd00013f90"
   },
   {
     "url": "docs/vue/vuex/index.html",
-    "revision": "faa6c29918e3d7331c19baa7651e0f60"
+    "revision": "c046ac62bc6c6db1f103d81daff83c0f"
   },
   {
     "url": "docs/vue/vue项目调试.html",
-    "revision": "1d686a9e8d468c367541d700ff531b5e"
+    "revision": "6963d4c4ea56f69d3843394778a093a4"
   },
   {
     "url": "favicon-32x32.png",
     "revision": "003a4f323ce077c0eb1c57a769d81b04"
   },
   {
-    "url": "icons/hbb/apple-launch-1242x2208.png",
+    "url": "/icons/hbb/apple-launch-1242x2208.png",
     "revision": "63811de6896615b9a6f77127b2751414"
   },
   {
-    "url": "icons/hbb/apple-launch-1536x2048.png",
+    "url": "/icons/hbb/apple-launch-1536x2048.png",
     "revision": "0f20220907814fe2582bd56855b03a07"
   },
   {
-    "url": "icons/hbb/apple-launch-640x1136.png",
+    "url": "/icons/hbb/apple-launch-640x1136.png",
     "revision": "78b050616d3b55131a7c2cd4196792a4"
   },
   {
-    "url": "icons/hbb/apple-launch-750x1334.png",
+    "url": "/icons/hbb/apple-launch-750x1334.png",
     "revision": "f33a4c448368585e5887b8a70e18b803"
   },
   {
@@ -191,19 +187,29 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "f6dda69397c8d44fe2d60b69fa2c52bf"
+    "revision": "54b05248fc6d2f2ccbbcaee2be8e2b2c"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
-addEventListener('message', event => {
-    const replyPort = event.ports[0]
-    const message = event.data
-    if (replyPort && message && message.type === 'skip-waiting') {
-      event.waitUntil(
-        self.skipWaiting().then(
-          () => replyPort.postMessage({ error: null }),
-          error => replyPort.postMessage({ error })
-        )
-      )
-    }
-  })
+self.addEventListener('activate', function (event) {
+    send_message_to_all_clients("sw.update");
+});
+//sw发送信息给页面
+function send_message_to_all_clients(msg) {
+    clients.matchAll().then(clients => {
+        clients.forEach(client => {
+            return new Promise(function (resolve, reject) {
+                var msg_chan = new MessageChannel();
+                msg_chan.port1.onmessage = function (event) {
+                    if (event.data.error) {
+                        reject(event.data.error);
+                    } else {
+                        resolve(event.data);
+                    }
+                };
+                client.postMessage(msg, [msg_chan.port2]);
+            });
+        })
+    })
+}
+workbox.routing.registerRoute(/\/sw-register\.js/,workbox.strategies.networkOnly());
