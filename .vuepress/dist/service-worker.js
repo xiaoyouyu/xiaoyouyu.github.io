@@ -27,7 +27,7 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "740202b09e3ffe1d573dc4add9d36a39"
+    "revision": "494965c11b730d6e90abf0f94a8e9265"
   },
   {
     "url": "app.png",
@@ -42,39 +42,39 @@ self.__precacheManifest = [
     "revision": "83621669651b9a3d4bf64d1a670ad856"
   },
   {
-    "url": "assets/js/10.6e9e4d08.js",
-    "revision": "82423920255237417dea9b3d230b5fbf"
+    "url": "assets/js/10.ced00c4c.js",
+    "revision": "2fc775f3285cb6a0bd39615c47e774c5"
   },
   {
-    "url": "assets/js/11.52d1db7c.js",
-    "revision": "d2630f0cf4dfc819a674dfd2bc56faa8"
+    "url": "assets/js/11.6fbe0b81.js",
+    "revision": "90ce6769db81e20fa460b60b4b95d34d"
   },
   {
-    "url": "assets/js/12.e05301cf.js",
+    "url": "assets/js/12.c52317aa.js",
     "revision": "1dc87dcb2ad71540da579a8ac8d28ff0"
   },
   {
-    "url": "assets/js/13.6a860572.js",
+    "url": "assets/js/13.33b41c03.js",
     "revision": "8e7616d7552b0644bb17bddf297f80be"
   },
   {
-    "url": "assets/js/14.11cc9bd7.js",
-    "revision": "a69cd4879438e66eb3a433226d6df8e1"
+    "url": "assets/js/14.5388b41f.js",
+    "revision": "ffb361910755442afba6d594b9be0d45"
   },
   {
     "url": "assets/js/15.007e57dd.js",
     "revision": "5ea0890d474d000af881bdf676485cd4"
   },
   {
-    "url": "assets/js/2.758407b3.js",
+    "url": "assets/js/2.8586269a.js",
     "revision": "eb6e75c9b6fbe4e96cf456094d02bcb1"
   },
   {
-    "url": "assets/js/3.916bc5db.js",
+    "url": "assets/js/3.c3badb97.js",
     "revision": "fb163a65da2ae1916a8d77ab5727253d"
   },
   {
-    "url": "assets/js/4.56e2bd05.js",
+    "url": "assets/js/4.94e1b0ec.js",
     "revision": "91acf64b133c8328ee6cd22ceb2a80dc"
   },
   {
@@ -82,52 +82,52 @@ self.__precacheManifest = [
     "revision": "c80f99461da2f3d3e19c644008dc6d4c"
   },
   {
-    "url": "assets/js/6.ab1b8e7b.js",
+    "url": "assets/js/6.b75eceef.js",
     "revision": "3939bf25fe11f1dc24415d7a7212cc46"
   },
   {
-    "url": "assets/js/7.738281e2.js",
+    "url": "assets/js/7.5e60c4e6.js",
     "revision": "eb27f4c1411df6686957500cb15f659d"
   },
   {
-    "url": "assets/js/8.09cdfc42.js",
-    "revision": "f6c78f5270a5816132107f499dc61ef1"
+    "url": "assets/js/8.29160b16.js",
+    "revision": "8e606e77951c3a9ca85e2077b027de3b"
   },
   {
-    "url": "assets/js/9.a4616b6a.js",
-    "revision": "039d35cb23c79e759e4c2b300b63eaa1"
+    "url": "assets/js/9.f7cdd6df.js",
+    "revision": "bd1a85783ccc540dd877ec0df1d903f3"
   },
   {
-    "url": "assets/js/app.e79367a0.js",
-    "revision": "e47909adaaaa60065bc4c30ed3c4fd6d"
+    "url": "assets/js/app.99db955c.js",
+    "revision": "433f14a8a0d7e046556cbdc4bdf85dae"
   },
   {
     "url": "docs/guide/index.html",
-    "revision": "b8b3ff4b261ff921db4a48068bc73ae2"
+    "revision": "88dc58dacf0611232ca6348e74dd96ba"
   },
   {
     "url": "docs/markdown/Emoji表情包.html",
-    "revision": "ea9abcdd6fbc4674b6188e899120abc3"
+    "revision": "0d13dad7ebe80eb08ac4d40abd4d99b5"
   },
   {
     "url": "docs/markdown/index.html",
-    "revision": "7a59d36d21c8649092100c12452d9d6c"
+    "revision": "52e026353a3f8c88f314c063914ce06e"
   },
   {
     "url": "docs/svn/index.html",
-    "revision": "4433c906fbafca75ab780477a061dca4"
+    "revision": "6796311585647c2cd2fa544258e3ce45"
   },
   {
     "url": "docs/vue/index.html",
-    "revision": "00f77a049a64f2c836c64badcaba7540"
+    "revision": "5d0867ef97db67d1dedc792949078031"
   },
   {
     "url": "docs/vue/vuex/index.html",
-    "revision": "99ceaa8738714ff558989a7c687eb32a"
+    "revision": "be2a97f1aee25a0e0ef6c70528dd690b"
   },
   {
     "url": "docs/vue/vue项目调试.html",
-    "revision": "7f3332723a5f6981eaa3409c42cf0b3b"
+    "revision": "517517d87776478f7ab71630f324b98f"
   },
   {
     "url": "favicon-32x32.png",
@@ -187,29 +187,9 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "d618e3e6e9d3c833ee7f62c002ca2c1e"
+    "revision": "984599706e91e87da55862cbdecdd032"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
-self.addEventListener('activate', function (event) {
-    send_message_to_all_clients("sw.update");
-});
-//sw发送信息给页面
-function send_message_to_all_clients(msg) {
-    clients.matchAll().then(clients => {
-        clients.forEach(client => {
-            return new Promise(function (resolve, reject) {
-                var msg_chan = new MessageChannel();
-                msg_chan.port1.onmessage = function (event) {
-                    if (event.data.error) {
-                        reject(event.data.error);
-                    } else {
-                        resolve(event.data);
-                    }
-                };
-                client.postMessage(msg, [msg_chan.port2]);
-            });
-        })
-    })
-}
-workbox.routing.registerRoute(/\/sw-register\.js/,workbox.strategies.networkOnly());
+workbox.core.skipWaiting();
+workbox.core.clientsClaim();

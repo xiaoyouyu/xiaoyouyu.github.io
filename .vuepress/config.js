@@ -42,7 +42,7 @@ module.exports = {
         if (!isServer) {
             config.plugins.push(new SwRegisterPlugin({
                 version: +new Date,
-                filePath: '/.vuepress/config/sw-register.js',
+                filePath: './.vuepress/config/sw-register.js',
                 output: './sw-register.js'
             }))
         }

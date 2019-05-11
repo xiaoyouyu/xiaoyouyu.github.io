@@ -8,8 +8,7 @@ module.exports = {
             globIgnores: ["sw-register.js"],
         },
         updatePopup: {
-            message: "已更新最新版本",
-            buttonText: "更新"
+            message: "站点发生更新，请手动刷新"
         }
     },
     '@vuepress/back-to-top': true,
