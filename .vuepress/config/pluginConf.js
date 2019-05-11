@@ -2,10 +2,11 @@ const secretKeyConf = require('./secretKeyConf.js');
 
 module.exports = {
     '@vuepress/pwa': {
-        serviceWorker: true,
-        updatePopup: {
-            message: "发现新内容可用",
-            buttonText: "刷新"
+        serviceWorker: true,//是否开启
+        // workboxConfig:"./sw-workbox.js",//如果熟悉workbox，通过自定义文件形式，来配置，放在public文件夹下
+        generateSWConfig:{//vuepress lavas的话，不要暴露这个配置
+            cleanupOutdatedCaches:true,
+            globIgnores:["sw-register.js"],
         }
     },
     '@vuepress/back-to-top': true,

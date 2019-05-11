@@ -2,7 +2,7 @@ const pluginConf = require('./config/pluginConf.js');
 const navConf = require('./config/navConf.js');
 const sidebarConf = require('./config/sidebarConf.js');
 const headConf = require('./config/headConf.js');
-const {SwRegisterPlugin} = require('sw-register-webpack-plugin');
+const SwRegisterPlugin = require('sw-register-webpack-plugin');
 
 module.exports = {
     title: '小鱿鱼',
@@ -42,7 +42,7 @@ module.exports = {
         if (!isServer) {
             config.plugins.push(new SwRegisterPlugin({
                 version: +new Date,
-                filePath: './config/sw-register.js',
+                filePath: '/.vuepress/config/sw-register.js',
                 output: './sw-register.js'
             }))
         }
