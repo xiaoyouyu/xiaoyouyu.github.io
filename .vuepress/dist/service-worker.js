@@ -27,7 +27,7 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "2e42cad5e5f8e2cdc0a8eeb90a6b78a6"
+    "revision": "b2fd490ea1219baa28bd914f1ad458d7"
   },
   {
     "url": "app.png",
@@ -42,24 +42,24 @@ self.__precacheManifest = [
     "revision": "83621669651b9a3d4bf64d1a670ad856"
   },
   {
-    "url": "assets/js/10.f616b2c7.js",
-    "revision": "f14817eefd679d1297f0547d667db1ea"
+    "url": "assets/js/10.8951ddec.js",
+    "revision": "2fc775f3285cb6a0bd39615c47e774c5"
   },
   {
-    "url": "assets/js/11.23aa0059.js",
-    "revision": "252b0f9f1530707106057386dcff8439"
+    "url": "assets/js/11.096fd395.js",
+    "revision": "9a9cff1260298f77b978cb76a0639e83"
   },
   {
-    "url": "assets/js/12.e5890adb.js",
-    "revision": "664e9ac64f2f8721e628830886dc6405"
+    "url": "assets/js/12.1d9c5b7a.js",
+    "revision": "379de78d1ab3e9dc9504795233f5f5fd"
   },
   {
-    "url": "assets/js/13.47287177.js",
-    "revision": "bf8ce7cd5e3b46876af4ac968496b20b"
+    "url": "assets/js/13.04982187.js",
+    "revision": "f3d25f07ec33ea3655d0a3a3418e31d4"
   },
   {
-    "url": "assets/js/14.6760c216.js",
-    "revision": "c938afc1ee83f98c6ad37a7ee1a1f026"
+    "url": "assets/js/14.ab18e056.js",
+    "revision": "f98b4f47d302057dd72e0870a6c81227"
   },
   {
     "url": "assets/js/15.007e57dd.js",
@@ -94,40 +94,40 @@ self.__precacheManifest = [
     "revision": "f6c78f5270a5816132107f499dc61ef1"
   },
   {
-    "url": "assets/js/9.771801f8.js",
-    "revision": "2a9ba191fa5f9051c5e0bdcb307db00a"
+    "url": "assets/js/9.e87a6d40.js",
+    "revision": "bd1a85783ccc540dd877ec0df1d903f3"
   },
   {
-    "url": "assets/js/app.66043ec9.js",
-    "revision": "c54fe3e631aa185ab6741961bc7b17fe"
+    "url": "assets/js/app.c097e801.js",
+    "revision": "17a5b3837a6e47ed7fe9242d975006f2"
   },
   {
     "url": "docs/guide/index.html",
-    "revision": "f2e512e8d266e88dd9e3ad0d387fb446"
+    "revision": "712e24e7cadde2e64ddb8386bf45ef91"
   },
   {
     "url": "docs/markdown/Emoji表情包.html",
-    "revision": "421a25702ee1b5f84568cb245c5f0907"
+    "revision": "d52483264a7a49331c1e8a34788b79ff"
   },
   {
     "url": "docs/markdown/index.html",
-    "revision": "2172d583a31bda3a3a3b5375c964fa17"
+    "revision": "68a4eb1db9a684a0bcaf674acb1a2d7e"
   },
   {
     "url": "docs/svn/index.html",
-    "revision": "83b57f9a01bf4c33a9bdd02a0b47d457"
+    "revision": "85a662f71a4d60719b1cdc9977b71c65"
   },
   {
     "url": "docs/vue/index.html",
-    "revision": "0dd7bd03c822f78bb335d089bd9e4bae"
+    "revision": "76f400fd3d187bfbeb454a8d31324c65"
   },
   {
     "url": "docs/vue/vuex/index.html",
-    "revision": "3c94485d218eab5a7437bf3465af887a"
+    "revision": "fac11982e3a84f8343edc82e3f9b7533"
   },
   {
     "url": "docs/vue/vue项目调试.html",
-    "revision": "2e2fd599737040c6b1c982f30f631aec"
+    "revision": "84c1596aa0ca60d308f01e4288655de2"
   },
   {
     "url": "favicon-32x32.png",
@@ -187,7 +187,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "726afcb77938885f45c6205d66f89993"
+    "revision": "4b3d9706c59f39af9729d444ef637883"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
