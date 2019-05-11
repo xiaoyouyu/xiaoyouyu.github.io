@@ -13,18 +13,18 @@ module.exports = [
         rel: 'manifest',
         href: '/manifest.json'
     }],
-    ['meta', {//针对不支持pwa浏览器，缓存策略，首页不缓存
-        "Http-Equiv": 'pragma',
-        "content": 'no-cache'
-    }],
-    ['meta', {//针对不支持pwa浏览器，缓存策略，首页不缓存
-        "Http-Equiv": 'Cache-Control',
-        "content": 'no-store, must-revalidate'
-    }],
-    ['meta', {//针对不支持pwa浏览器，缓存策略，首页不缓存
-        "Http-Equiv": 'expires',
-        "content": 'Wed, 26 Feb 1997 08:21:57 GMT'
-    }],
+    // ['meta', {//针对不支持pwa浏览器，缓存策略，首页不缓存
+    //     "Http-Equiv": 'pragma',
+    //     "content": 'no-cache'
+    // }],
+    // ['meta', {//针对不支持pwa浏览器，缓存策略，首页不缓存
+    //     "Http-Equiv": 'Cache-Control',
+    //     "content": 'no-store, must-revalidate'
+    // }],
+    // ['meta', {//针对不支持pwa浏览器，缓存策略，首页不缓存
+    //     "Http-Equiv": 'expires',
+    //     "content": 'Wed, 26 Feb 1997 08:21:57 GMT'
+    // }],
     ['meta', {
         "Http-Equiv": 'X-UA-Compatible',
         "content": 'IE=edge'

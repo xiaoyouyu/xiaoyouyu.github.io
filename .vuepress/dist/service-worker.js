@@ -27,7 +27,7 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "1089c745d92203d0a05b388498eb519d"
+    "revision": "740202b09e3ffe1d573dc4add9d36a39"
   },
   {
     "url": "app.png",
@@ -42,20 +42,20 @@ self.__precacheManifest = [
     "revision": "83621669651b9a3d4bf64d1a670ad856"
   },
   {
-    "url": "assets/js/10.cf7fdbc5.js",
-    "revision": "5f47c60f5c1f761c002dd910b685d971"
+    "url": "assets/js/10.6e9e4d08.js",
+    "revision": "82423920255237417dea9b3d230b5fbf"
   },
   {
-    "url": "assets/js/11.096fd395.js",
-    "revision": "9a9cff1260298f77b978cb76a0639e83"
+    "url": "assets/js/11.52d1db7c.js",
+    "revision": "d2630f0cf4dfc819a674dfd2bc56faa8"
   },
   {
-    "url": "assets/js/12.f5ebd06b.js",
-    "revision": "6aa77a4a18b2d5de8c62b7c1f3099254"
+    "url": "assets/js/12.e05301cf.js",
+    "revision": "1dc87dcb2ad71540da579a8ac8d28ff0"
   },
   {
-    "url": "assets/js/13.04982187.js",
-    "revision": "f3d25f07ec33ea3655d0a3a3418e31d4"
+    "url": "assets/js/13.6a860572.js",
+    "revision": "8e7616d7552b0644bb17bddf297f80be"
   },
   {
     "url": "assets/js/14.11cc9bd7.js",
@@ -90,63 +90,63 @@ self.__precacheManifest = [
     "revision": "eb27f4c1411df6686957500cb15f659d"
   },
   {
-    "url": "assets/js/8.7803a2ba.js",
-    "revision": "32b9f9cf342a16a17683973e99a9724c"
+    "url": "assets/js/8.09cdfc42.js",
+    "revision": "f6c78f5270a5816132107f499dc61ef1"
   },
   {
     "url": "assets/js/9.a4616b6a.js",
     "revision": "039d35cb23c79e759e4c2b300b63eaa1"
   },
   {
-    "url": "assets/js/app.6ff36307.js",
-    "revision": "c9cafd9423fd74e67ef3ef284992c405"
+    "url": "assets/js/app.e79367a0.js",
+    "revision": "e47909adaaaa60065bc4c30ed3c4fd6d"
   },
   {
     "url": "docs/guide/index.html",
-    "revision": "92f0ef1a65afb1eb24be50f088977c1b"
+    "revision": "b8b3ff4b261ff921db4a48068bc73ae2"
   },
   {
     "url": "docs/markdown/Emoji表情包.html",
-    "revision": "e4cbb581bb8f1048a3b95232b42a39b2"
+    "revision": "ea9abcdd6fbc4674b6188e899120abc3"
   },
   {
     "url": "docs/markdown/index.html",
-    "revision": "27eb9a6cfb9bd4d1d3181aa3919caaf7"
+    "revision": "7a59d36d21c8649092100c12452d9d6c"
   },
   {
     "url": "docs/svn/index.html",
-    "revision": "a24ed635a042da0edbe426641a77767d"
+    "revision": "4433c906fbafca75ab780477a061dca4"
   },
   {
     "url": "docs/vue/index.html",
-    "revision": "c8b7a8e5ba18bc10c449babd00013f90"
+    "revision": "00f77a049a64f2c836c64badcaba7540"
   },
   {
     "url": "docs/vue/vuex/index.html",
-    "revision": "c046ac62bc6c6db1f103d81daff83c0f"
+    "revision": "99ceaa8738714ff558989a7c687eb32a"
   },
   {
     "url": "docs/vue/vue项目调试.html",
-    "revision": "6963d4c4ea56f69d3843394778a093a4"
+    "revision": "7f3332723a5f6981eaa3409c42cf0b3b"
   },
   {
     "url": "favicon-32x32.png",
     "revision": "003a4f323ce077c0eb1c57a769d81b04"
   },
   {
-    "url": "/icons/hbb/apple-launch-1242x2208.png",
+    "url": "icons/hbb/apple-launch-1242x2208.png",
     "revision": "63811de6896615b9a6f77127b2751414"
   },
   {
-    "url": "/icons/hbb/apple-launch-1536x2048.png",
+    "url": "icons/hbb/apple-launch-1536x2048.png",
     "revision": "0f20220907814fe2582bd56855b03a07"
   },
   {
-    "url": "/icons/hbb/apple-launch-640x1136.png",
+    "url": "icons/hbb/apple-launch-640x1136.png",
     "revision": "78b050616d3b55131a7c2cd4196792a4"
   },
   {
-    "url": "/icons/hbb/apple-launch-750x1334.png",
+    "url": "icons/hbb/apple-launch-750x1334.png",
     "revision": "f33a4c448368585e5887b8a70e18b803"
   },
   {
@@ -187,7 +187,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "54b05248fc6d2f2ccbbcaee2be8e2b2c"
+    "revision": "d618e3e6e9d3c833ee7f62c002ca2c1e"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
