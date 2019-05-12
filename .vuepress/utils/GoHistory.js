@@ -1,23 +1,17 @@
 //1、处理重新加载当访问首页时，直接跳转到之前的页面
 //2、为解决iphone添加到主屏幕后，切换又重新访问首页bug
-
 /**
- * 
- * 
- * 
-待实现
+实现
 1、修改url地址，无法进入页面
 2、切回去确实回退到之前页面，这时候再切出去，再进来就不能为当前页面了。
     2的方案，设置一个历史数组，每次进入都清空数组，访问一个push一个。当进来时，先判断，数组为空，就还是调回之前页面。如果不为空，说明刚刚访问过内容了。会默认跳回的。
     就算大于十分钟，我也给它调回之前内容吧
-    1的方案,仅访问首页走这个逻辑，所以，永远记录用户上次访问的位置吗？
+    1的方案，仅访问首页走这个逻辑，所以，永远记录用户上次访问的位置吗？是的
  * 
  */
-
-
 export class GoHistory {
-    currentPath = location.href;//当前路径
-    dataStore = this.getDataStore();//所有访问记录，每次实例化重置
+    currentPath ;//当前路径
+    dataStore ;//所有访问记录，每次实例化重置
     detached_head; //当前指针，格式为：时间戳[d_h]当前访问路径[d_h]是否跳转开关
     detached_stamp; //当前指针，时间戳 
     detached_path;  //当前指针，路径
@@ -40,10 +34,13 @@ export class GoHistory {
      * 控制器
      *  */
     constructor(...args) {
-        [this.time, this.pathName="/", this.routerHasPath] = args;
+        [this.time, this.pathName="/", this.routerHasPath ] = args;
         if(!this.getItem()){
             return;
         }
+        this.currentPath = location.href;
+        this.dataStore = this.getDataStore();
+        
         //就算是没有任何操作，我也继续跳转到上次访问页面
         if(this.dataStore){
             this.startOpen();
