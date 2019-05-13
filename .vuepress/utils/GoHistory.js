@@ -89,7 +89,7 @@ export class GoHistory {
     closeOpen(){
         if(this.hasHashPath(this.currentPath)){//处理锚点路径，在当前页面再次访问
             addEventListener('load', () => {
-                //并不是真正的跳转，是触发了路由对锚点路径的处理，如果路由不支持，此方法不无效。需要提供路由对锚点路径的处理
+                //并不是真正的跳转，是触发了路由对锚点路径的处理，如果路由不支持，此方法无效。需要提供路由对锚点路径的处理
                 if(this.routerHasPath){
                     this.flag = "0";//关闭
                     this.routerHasPath();
