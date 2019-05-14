@@ -1,6 +1,6 @@
 ## 介绍
 
-这是一个 [VuePress](https://v1.vuepress.vuejs.org/zh/) 框架项目，建议使用 [Yarn](https://yarn.bootcss.com/) 管理此项目。    
+这是一个 [VuePress](https://v1.vuepress.vuejs.org/zh/ target="_blank") 框架项目，建议使用 [Yarn](https://yarn.bootcss.com/) 管理此项目。    
 此项目发布后，用于持续记录技术笔记。    
 欢迎小伙伴参与维护。    
 
@@ -53,4 +53,4 @@ yarn build
 
 
 测试：
-<a href="https://xiaoyouyu.github.io/" target="_blank">跳到自己首页</a>
+<a href="https://xiaoyouyu.github.io/" target="_blank" >跳到自己首页</a>
