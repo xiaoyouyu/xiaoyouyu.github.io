@@ -1,6 +1,6 @@
 ## 介绍
 
-这是一个 [VuePress](https://v1.vuepress.vuejs.org/zh/) 框架项目，建议使用 [Yarn](https://yarn.bootcss.com/) 管理此项目。    
+这是一个 [VuePress](https://v1.vuepress.vuejs.org/zh/?_blank) 框架项目，建议使用 [Yarn](https://yarn.bootcss.com/?_blank) 管理此项目。    
 此项目发布后，用于持续记录技术笔记。    
 欢迎小伙伴参与维护。    
 
@@ -25,17 +25,17 @@ yarn build
 
 在 .vuepress/config/secretKeyConf.js 文件里，需要填写自己的相关配置内容：
 
-1. [Valine 评论功能配置](https://valine.js.org/quickstart.html)    
+1. [Valine 评论功能配置](https://valine.js.org/quickstart.html?_blank)    
    appId:""
    appKey:""
 
-2. [Google Analytics 谷歌分析配置](https://support.google.com/analytics)    
+2. [Google Analytics 谷歌分析配置](https://support.google.com/analytics?_blank)    
    ga:""
 
-3. [Google Search Console 提高在Google搜索结果中的展现率](https://search.google.com/search-console/about)     
+3. [Google Search Console 提高在Google搜索结果中的展现率](https://search.google.com/search-console/about?_blank)     
    googleSearchConsole:""
 
-4. [百度统计](https://mtj.baidu.com/web/welcome/login)     
+4. [百度统计](https://mtj.baidu.com/web/welcome/login?_blank)     
    hm:""
 
 ## 待完善的内容
