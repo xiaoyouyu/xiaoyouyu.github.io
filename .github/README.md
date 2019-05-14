@@ -52,5 +52,6 @@ yarn build
 - [ ] 待补充...
 
 
-测试：
-<a href="https://xiaoyouyu.github.io/" target="_blank" >跳到自己首页</a>
+测试：  
+<a href="https://xiaoyouyu.github.io/" target="_blank" >跳到自己首页</a>    
+[跳到自己首页](https://xiaoyouyu.github.io/){:target='_blank'}
