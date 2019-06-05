@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <title>vue项目调试 | 小鱿鱼</title>
+    <meta name="description" content="技术笔记">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0,minimal-ui">
+  <link rel="shortcut icon" href="/favicon-32x32.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta Http-Equiv="pragma" content="no-cache">
+  <meta Http-Equiv="Cache-Control" content="no-store, must-revalidate">
+  <meta Http-Equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT">
+  <meta Http-Equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="renderer" content="webkit">
+  <meta name="theme-color" content="#3eaf7c">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="apple-touch-startup-image" media="(device-width: 320px)" href="/icons/hbb/apple-launch-640x1136.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 375px)" href="/icons/hbb/apple-launch-750x1334.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 414px)" href="/icons/hbb/apple-launch-1242x2208.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 768px)" href="/icons/hbb/apple-launch-1536x2048.png">
+  <link rel="apple-touch-icon" href="/icons/icon-152x152.png">
+  <meta name="msapplication-TileImage" content="/icons/icon-192x192.png">
+  <meta name="msapplication-TileColor" content="#3eaf7c">
+  <link rel="mask-icon" href="/icons/touch-bar.svg" color="#3eaf7c">
+  <meta name="google-site-verification" content="Z8IG4v348qcydMP25GCgfRU2RIbUXbG9SK2bM2j8aCs">
+  <script src="//hm.baidu.com/hm.js?536020c63661169243a356501dcb5d98"></script>
+    
+    <link rel="preload" href="/assets/css/0.styles.a1803f11.css" as="style"><link rel="preload" href="/assets/js/app.02e561f7.js" as="script"><link rel="preload" href="/assets/js/3.6a158441.js" as="script"><link rel="preload" href="/assets/js/2.81ba393e.js" as="script"><link rel="preload" href="/assets/js/14.f3fc650b.js" as="script"><link rel="prefetch" href="/assets/js/10.3bbba044.js"><link rel="prefetch" href="/assets/js/11.7acca9d5.js"><link rel="prefetch" href="/assets/js/12.653d5d8c.js"><link rel="prefetch" href="/assets/js/13.b3aac459.js"><link rel="prefetch" href="/assets/js/15.f142df59.js"><link rel="prefetch" href="/assets/js/4.5dbc1d5b.js"><link rel="prefetch" href="/assets/js/5.8577bb41.js"><link rel="prefetch" href="/assets/js/6.4e8e0b5b.js"><link rel="prefetch" href="/assets/js/7.4518d9f3.js"><link rel="prefetch" href="/assets/js/8.1d935ba7.js"><link rel="prefetch" href="/assets/js/9.eb9c6b28.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.a1803f11.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">小鱿鱼</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><a href="/docs/guide/" class="nav-link">指南</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">技术栈</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/vue/" class="nav-link router-link-active">Vue v2.x</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/markdown/" class="nav-link">Markdown</a></li><li class="dropdown-item"><!----> <a href="http://cv.ftqq.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  简历生成器
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <a href="https://github.com/xiaoyouyu/-" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><a href="/docs/guide/" class="nav-link">指南</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">技术栈</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/vue/" class="nav-link router-link-active">Vue v2.x</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/markdown/" class="nav-link">Markdown</a></li><li class="dropdown-item"><!----> <a href="http://cv.ftqq.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  简历生成器
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <a href="https://github.com/xiaoyouyu/-" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Vue v2.x</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/vue/" class="sidebar-link">Vue.js 简介</a></li><li><a href="/docs/vue/vuex/" class="sidebar-link">vuex</a></li><li><a href="/docs/vue/vue项目调试.html" class="active sidebar-link">vue项目调试</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="content default"><p><a href="https://cn.vuejs.org/v2/cookbook/debugging-in-vscode.html" target="_blank" rel="noopener noreferrer">官方调试方案<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h3 id="vue调试三种方式"><a href="#vue调试三种方式" aria-hidden="true" class="header-anchor">#</a> vue调试三种方式</h3> <ol><li>vscode安装Debugger for Chrome插件，通过vscode的debug功能打开的chrome，可以映射到具体的文件上面</li> <li>chrome 安装 Vue Devtools 插件</li> <li>代码里直接写 debugger 设断点（注意开发完要删掉）</li></ol> <h3 id="调试生产代码："><a href="#调试生产代码：" aria-hidden="true" class="header-anchor">#</a> 调试生产代码：</h3> <ol><li>将生产的代码配置</li></ol> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">//Vue CLI 3 里vue.config.js中配置方法</span>
+ devtool<span class="token punctuation">:</span> <span class="token string">'source-map'</span><span class="token punctuation">,</span>
+ module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+     configureWebpack<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+         devtool<span class="token punctuation">:</span> <span class="token string">'source-map'</span>
+     <span class="token punctuation">}</span>
+ <span class="token punctuation">}</span>
+</code></pre></div><ol start="2"><li>将本地生产代码打包，并运行打包后的代码（一般在 dist 目录）</li> <li>通过vscode的debug功能打开的chrome，访问本地服务器地址（dist 目录），报错位置可以映射到具体的source-map文件上面</li></ol> <h3 id="调试生产数据"><a href="#调试生产数据" aria-hidden="true" class="header-anchor">#</a> 调试生产数据</h3> <p><strong>本地dev环境调用接口会不会跨域？</strong></p> <ol><li>后端配置允许跨域请求
+dev环境启动命令传入生产环境参数，直接调用生产API地址
+例如：<code>npm run dev:glgl --production</code>
+前提是，API地址是根据环境变量判断的，而不是通过url地址判断的<br> <strong>缺点</strong>：这个方案还是有些麻烦，传入生产地址，代表着打包方案也采用生产方案。</li> <li>用webpack或node服务器做一个代理访问
+dev环境启动，直接调用测试API地址，再有webpack映射到生产API地址
+vue.config.js中<br> <strong>缺点</strong>：配置比较麻烦</li></ol> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">/*配置方法*/</span>
+devServer<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+  host<span class="token punctuation">:</span> <span class="token string">'10.11.29.222'</span><span class="token punctuation">,</span>
+  port<span class="token punctuation">:</span> <span class="token number">8080</span><span class="token punctuation">,</span>
+  proxy<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token string">'/'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      target<span class="token punctuation">:</span> <span class="token string">'http://127.0.0.1:8080/'</span><span class="token punctuation">,</span>
+      changeOrigin<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      pathRewrite<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token string">'^/'</span><span class="token punctuation">:</span> <span class="token string">''</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      ws<span class="token punctuation">:</span> <span class="token boolean">false</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ol start="3"><li>要么是fiddler做代理，访问本地服务器地址，映射生产服务器地址
+dev环境启动，fiddler直接配置API的映射关系<br> <strong>缺点</strong>：如果新增API接口，项目中增加配置，fiddler还要继续增加配置<br> <strong>问题</strong>：本地没有https请求，无法映射生产的https请求</li></ol> <h3 id="现有项目调试生产数据方案"><a href="#现有项目调试生产数据方案" aria-hidden="true" class="header-anchor">#</a> 现有项目调试生产数据方案</h3> <ol><li>项目中用的 SockJS-node Node.js server 做了跨域处理（vue-cli3自带）</li> <li>项目根据url访问地址判断，选择不同的API地址
+方案：
+直接修改 env/index.js 当中的判断参数 isProduction 为true，
+因为有sockjs-node跨域方案，直接访问本地地址，调试完再将 isProduction 改回来。<br> <strong>优点</strong>：方便，不用使用额外工具。<br> <strong>缺点</strong>：直接在浏览器暴露了内部测试地址（可以限制外网访问），和url配置信息。</li></ol> <p><em>env/index.js文件示例代码：</em></p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// 以下三个是生产地址</span>
+<span class="token keyword">let</span> baseUrl <span class="token operator">=</span> <span class="token string">'https://m.xxx.com.cn'</span>
+<span class="token keyword">let</span> apiUrl <span class="token operator">=</span> <span class="token string">'https://api.xxx.com.cn'</span>
+<span class="token keyword">let</span> cdnUrl <span class="token operator">=</span> <span class="token string">'https://s.xxx.com.cn'</span>
+
+<span class="token keyword">let</span> host <span class="token operator">=</span> window<span class="token punctuation">.</span>location<span class="token punctuation">.</span>hostname<span class="token punctuation">;</span>
+<span class="token keyword">let</span> isProduction <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span><span class="token comment">// 设置开关</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token regex">/10|127|localhost/</span><span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span>host<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token comment">//本地环境</span>
+    isProduction <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token regex">/stg|test/</span><span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span>host<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token comment">//测试环境</span>
+    isProduction <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>isProduction<span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token comment">//通过开关判断</span>
+    <span class="token comment">// 判断不是生产环境，就使用测试环境地址.</span>
+    baseUrl <span class="token operator">=</span> <span class="token string">'https://mtest.xxx.com.cn'</span><span class="token punctuation">;</span>
+    cdnUrl <span class="token operator">=</span> <span class="token string">'https://stest.xxx.com.cn'</span><span class="token punctuation">;</span>
+    apiUrl <span class="token operator">=</span> <span class="token string">'https://agenttest.xxx.com.cn'</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">export</span> <span class="token punctuation">{</span>
+    baseUrl<span class="token punctuation">,</span>
+    apiUrl<span class="token punctuation">,</span>
+    cdnUrl<span class="token punctuation">,</span>
+    isProduction
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/xiaoyouyu/-/edit/master/docs/vue/vue项目调试.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2019-5-6 14:42:11</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+                ←
+                <a href="/docs/vue/vuex/" class="prev">vuex</a></span> <!----></p></div>  <div class="ValineComment" data-v-f04c7b36><hr data-v-f04c7b36> <span id="/docs/vue/vue%E9%A1%B9%E7%9B%AE%E8%B0%83%E8%AF%95.html" data-flag-title="vue项目调试" class="leancloud-visitors" data-v-f04c7b36><em class="post-meta-item-text" data-v-f04c7b36>文章阅读量</em> <i class="leancloud-visitors-count" data-v-f04c7b36>...</i></span> <div id="vcomments" data-v-f04c7b36></div></div></main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.02e561f7.js" defer></script><script src="/assets/js/3.6a158441.js" defer></script><script src="/assets/js/2.81ba393e.js" defer></script><script src="/assets/js/14.f3fc650b.js" defer></script>
+  </body>
+</html>
