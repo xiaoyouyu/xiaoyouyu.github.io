@@ -16,7 +16,9 @@ const { readdirSync , statSync} = require('fs');
 const getFilenames = tco(function(filenames={}, excludes, genSidebar,...arg) {
     let children = [];
     let [title, link, prev, next] = arg;
-    
+    if(link.indexOf("http")==0){
+        return;
+    }
     readdirSync(fullpath=path.join(path.resolve(".") + link)).forEach(file => {
         if (excludes[0] && excludes.indexOf(file) > -1) {
             return;

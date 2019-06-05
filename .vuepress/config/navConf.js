@@ -94,10 +94,14 @@ module.exports = [{
     // },
     {
         text: '其他',
-        items: [{
-            text: 'Markdown',
-            link: '/docs/markdown/'
-        }
+            items: [{
+                text: 'Markdown',
+                link: '/docs/markdown/'
+            },
+            {
+                text: '简历生成器',
+                link: 'http://cv.ftqq.com'
+            }
         ]
     }
 ];
